@@ -15,11 +15,14 @@ interface FluidMorphBgProps {
   duration?: number;
   /**
    * The base color palette to use for the shapes.
-   * Array of hex colors for each path.
+   * Array of CSS colors for each path. Accepts any CSS color value,
+   * including theme tokens such as `var(--primary)`, which are resolved
+   * live by the browser and therefore follow light/dark theme changes.
    */
   colors?: string[];
   /**
    * Optional background color for the scene container.
+   * Accepts theme tokens such as `var(--chart-5)`.
    */
   backgroundColor?: string;
 }
@@ -28,15 +31,15 @@ export function FluidMorphBg({
   className,
   duration = 4,
   colors = [
-    "#4f4fea",
-    "#0c27cf",
-    "#13269c",
-    "#242468",
-    "#2648e6",
-    "#2c31b0",
-    "#262689",
+    "var(--chart-1)",
+    "var(--chart-2)",
+    "var(--chart-3)",
+    "var(--chart-4)",
+    "var(--chart-5)",
+    "var(--primary)",
+    "var(--chart-5)",
   ],
-  backgroundColor = "#282886",
+  backgroundColor = "var(--chart-5)",
 }: FluidMorphBgProps) {
   // SVG viewbox dimensions
   const viewBox = "0 0 1440 800";
@@ -96,7 +99,7 @@ export function FluidMorphBg({
             <motion.path
               key={index}
               d={dList[0]}
-              fill={colors[index % colors.length]}
+              style={{ fill: colors[index % colors.length] }}
               animate={{
                 d: dList,
               }}

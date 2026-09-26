@@ -24,7 +24,7 @@ export default function CallToActionSection({ user, lang, homeSettings }: CallTo
         initial={{ opacity: 0, scale: 0.98 }}
         animate={{ opacity: 1, scale: 1 }}
         transition={{ duration: 0.7, ease: 'easeOut' }}
-        className="mx-auto max-w-5xl rounded-[2rem] border border-border/70 bg-gradient-to-br from-background via-background to-slate-50/80 p-8 shadow-2xl shadow-slate-950/10 dark:from-slate-950 dark:via-slate-950 dark:to-slate-900/95"
+        className="mx-auto max-w-5xl rounded-[2rem] border border-border/70 bg-gradient-to-br from-background via-background to-muted/80 p-8 shadow-2xl shadow-foreground/10 dark:from-surface-inverse dark:via-surface-inverse dark:to-surface-inverse-elevated/95"
       >
         <div className="grid gap-8 lg:grid-cols-[1.1fr_minmax(280px,0.5fr)] lg:items-center">
           <div>

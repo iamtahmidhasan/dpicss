@@ -13,14 +13,14 @@ export const AboutSettings: GlobalConfig = {
   },
   fields: [
     { name: 'badge', type: 'text', localized: true, defaultValue: 'About DPI Computing Society' },
-    { name: 'title', type: 'text', localized: true, defaultValue: 'Building Future Innovators Through Robotics & Technology' },
-    { name: 'description', type: 'textarea', localized: true, defaultValue: 'Dhaka Polytechnic Institute Computing Society (DPICS) is a student-led organization dedicated to fostering innovation, creativity, and technical excellence in robotics and related technologies.' },
+    { name: 'title', type: 'text', localized: true, defaultValue: 'Building Future Innovators Through Computing & Technology' },
+    { name: 'description', type: 'textarea', localized: true, defaultValue: 'DPI Computing Society (DPICS) is a student-led organization dedicated to fostering innovation, creativity, and technical excellence in computing and related technologies.' },
     {
       name: 'innovation',
       type: 'group',
       fields: [
         { name: 'title', type: 'text', localized: true, defaultValue: 'Innovation' },
-        { name: 'description', type: 'textarea', localized: true, defaultValue: 'Encouraging students to transform ideas into real-world robotics solutions.' },
+        { name: 'description', type: 'textarea', localized: true, defaultValue: 'Encouraging students to transform ideas into real-world software and web solutions.' },
       ],
     },
     {
@@ -46,7 +46,7 @@ export const AboutSettings: GlobalConfig = {
       fields: [
         { name: 'badge', type: 'text', localized: true, defaultValue: 'Our Mission' },
         { name: 'title', type: 'text', localized: true, defaultValue: 'Empowering Students Through Practical Learning' },
-        { name: 'description', type: 'textarea', localized: true, defaultValue: 'Our mission is to empower students with practical knowledge and hands-on experience in robotics and embedded systems. We aim to develop problem-solving skills, creativity, and technical excellence through workshops, projects, and competitive participation at national and international levels.' },
+        { name: 'description', type: 'textarea', localized: true, defaultValue: 'Our mission is to empower students with practical knowledge and hands-on experience in software engineering, web development, and data. We aim to develop problem-solving skills, creativity, and technical excellence through workshops, projects, and competitive participation at national and international levels.' },
       ],
     },
     {
@@ -56,7 +56,7 @@ export const AboutSettings: GlobalConfig = {
       fields: [
         { name: 'badge', type: 'text', localized: true, defaultValue: 'Our Vision' },
         { name: 'title', type: 'text', localized: true, defaultValue: 'Inspiring The Next Generation Of Innovators' },
-        { name: 'description', type: 'textarea', localized: true, defaultValue: 'We envision creating a generation of technology-driven leaders and innovators who will contribute to the advancement of robotics and engineering in Bangladesh and beyond.' },
+        { name: 'description', type: 'textarea', localized: true, defaultValue: 'We envision creating a generation of technology-driven leaders and innovators who will contribute to the advancement of computing and engineering in Bangladesh and beyond.' },
         { name: 'description2', type: 'textarea', localized: true, defaultValue: 'DPI Computing Society strives to inspire students to think beyond textbooks and turn their imagination into real-world applications.' },
         { name: 'description2Title', type: 'text', localized: true, defaultValue: 'A Future Built Together' },
       ],
@@ -86,7 +86,7 @@ export const AboutSettings: GlobalConfig = {
       type: 'group',
       fields: [
         { name: 'title', type: 'text', localized: true, defaultValue: 'Shared Vision' },
-        { name: 'description', type: 'textarea', localized: true, defaultValue: 'With a shared passion for robotics and technology, the founders transformed an idea into a thriving platform for future engineers and innovators.' },
+        { name: 'description', type: 'textarea', localized: true, defaultValue: 'With a shared passion for computing and technology, the founders transformed an idea into a thriving platform for future developers and innovators.' },
       ],
     },
     {
@@ -95,7 +95,7 @@ export const AboutSettings: GlobalConfig = {
       fields: [
         { name: 'title', type: 'text', localized: true, defaultValue: 'Leadership & Growth' },
         { name: 'description', type: 'textarea', localized: true, defaultValue: 'Their dedication, hard work, and forward-thinking mindset shaped the club\'s culture of creativity, collaboration, and continuous learning.' },
-        { name: 'description2', type: 'textarea', localized: true, defaultValue: 'Today, DPI Computing Society stands as a recognized hub for robotics education, project development, and competitive success.' },
+        { name: 'description2', type: 'textarea', localized: true, defaultValue: 'Today, DPI Computing Society stands as a recognized hub for computing education, software development, and competitive success.' },
       ],
     },
     {
@@ -112,7 +112,7 @@ export const AboutSettings: GlobalConfig = {
       type: 'group',
       label: 'Hero Card',
       fields: [
-        { name: 'description', type: 'textarea', localized: true, defaultValue: 'Empowering students with practical robotics knowledge and hands-on experience.' },
+        { name: 'description', type: 'textarea', localized: true, defaultValue: 'Empowering students with practical computing knowledge and hands-on experience.' },
         { name: 'exploreCourses', type: 'text', localized: true, defaultValue: 'Explore Courses' },
       ],
     },
@@ -137,7 +137,7 @@ export const AboutSettings: GlobalConfig = {
       label: 'Mission Vision Section',
       fields: [
         { name: 'title', type: 'text', localized: true, defaultValue: 'Alumni Advisors & Executive' },
-        { name: 'description', type: 'textarea', localized: true, defaultValue: 'Our purpose and aspirations for the future of robotics education' },
+        { name: 'description', type: 'textarea', localized: true, defaultValue: 'Our purpose and aspirations for the future of computing education' },
       ],
     },
     {

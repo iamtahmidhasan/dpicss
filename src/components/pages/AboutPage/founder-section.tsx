@@ -187,7 +187,7 @@ export function FounderSection({ className, aboutSettings, lang, members }: Foun
             {/* Achievement Card */}
             <div className="flex flex-col justify-between gap-6 rounded-xl border p-7">
               <div className="flex items-center gap-4">
-                <div className="flex h-10 w-10 items-center justify-center rounded-full bg-yellow-500/10 text-yellow-600">
+                <div className="flex h-10 w-10 items-center justify-center rounded-full bg-warning/10 text-warning">
                   <Trophy className="h-5 w-5" />
                 </div>
                 <p className="font-semibold">{aboutSettings.leadership.title || 'Excellence'}</p>

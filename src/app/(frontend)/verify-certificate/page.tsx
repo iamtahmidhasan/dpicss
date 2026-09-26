@@ -84,7 +84,7 @@ export default function VerifyCertificatePage() {
             <div
               className={`mt-6 rounded-lg border p-4 text-sm ${
                 result.valid
-                  ? 'border-green-200 bg-green-50 text-green-900 dark:border-green-900 dark:bg-green-950 dark:text-green-100'
+                  ? 'border-success-border bg-success-soft text-success-foreground dark:border-success-foreground dark:bg-success-soft dark:text-success-muted'
                   : 'border-destructive/30 bg-destructive/5'
               }`}
             >

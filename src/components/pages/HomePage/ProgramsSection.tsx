@@ -17,10 +17,10 @@ type ProgramsSectionProps = {
 export default function ProgramsSection({ lang, homeSettings, className }: ProgramsSectionProps) {
   const features = homeSettings.features
   const programs = [
-    { icon: Cpu, group: features?.workshops, color: 'bg-blue-500/10 text-blue-500' },
-    { icon: CircuitBoard, group: features?.buildNight, color: 'bg-purple-500/10 text-purple-500' },
-    { icon: Award, group: features?.competition, color: 'bg-amber-500/10 text-amber-500' },
-    { icon: ShieldCheck, group: features?.mentorship, color: 'bg-emerald-500/10 text-emerald-500' },
+    { icon: Cpu, group: features?.workshops, color: 'bg-cat-blue/10 text-cat-blue' },
+    { icon: CircuitBoard, group: features?.buildNight, color: 'bg-cat-violet/10 text-cat-violet' },
+    { icon: Award, group: features?.competition, color: 'bg-cat-amber/10 text-cat-amber' },
+    { icon: ShieldCheck, group: features?.mentorship, color: 'bg-cat-emerald/10 text-cat-emerald' },
   ]
 
   return (

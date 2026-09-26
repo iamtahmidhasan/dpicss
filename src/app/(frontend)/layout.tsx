@@ -19,7 +19,7 @@ export const metadata: ReturnType<typeof createPageMetadata> & Metadata = {
   ...createPageMetadata({
     description: 'Official website of DPI Computing Society with courses, achievements, and community.',
     path: '/',
-    keywords: ['DPICS', 'DPI Computing Society', 'robotics', 'courses', 'Bangladesh'],
+    keywords: ['DPICS', 'DPI Computing Society', 'computing', 'courses', 'Bangladesh'],
   }),
   ...createPWAMetadata(),
 }

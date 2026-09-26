@@ -19,15 +19,15 @@ export const HomeSettings: GlobalConfig = {
       fields: [
         { name: 'bar', type: 'text', localized: true, defaultValue: 'Official club homepage' },
         { name: 'barSub', type: 'text', localized: true, defaultValue: 'Live updates, events, and project stories for every member.' },
-        { name: 'globeLabel', type: 'text', localized: true, defaultValue: 'Global robotics community' },
-        { name: 'globeCopy', type: 'text', localized: true, defaultValue: 'A collaborative space for students, creators, and mentors to build smarter robots.' },
+        { name: 'globeLabel', type: 'text', localized: true, defaultValue: 'Global computing community' },
+        { name: 'globeCopy', type: 'text', localized: true, defaultValue: 'A collaborative space for students, creators, and mentors to build smarter software.' },
         { name: 'point1', type: 'text', localized: true, defaultValue: 'Live build nights' },
         { name: 'point2', type: 'text', localized: true, defaultValue: 'Mentor-led workshops' },
         { name: 'point3', type: 'text', localized: true, defaultValue: 'Competition-ready training' },
       ],
     },
     { name: 'badge', type: 'text', localized: true, defaultValue: 'DPI Computing Society' },
-    { name: 'title1', type: 'text', localized: true, defaultValue: 'Build robots ' },
+    { name: 'title1', type: 'text', localized: true, defaultValue: 'Build software ' },
     {
       name: 'titleRotating',
       type: 'array',
@@ -41,7 +41,7 @@ export const HomeSettings: GlobalConfig = {
       ],
     },
     { name: 'title2', type: 'text', localized: true, defaultValue: 'Learn fast.' },
-    { name: 'description', type: 'textarea', localized: true, defaultValue: 'A student led community at Dhaka Government Polytechnic Institute focused on real world robotics mechanical design, embedded systems, programming, and teamwork.' },
+    { name: 'description', type: 'textarea', localized: true, defaultValue: 'A student-led community at Dhaka Polytechnic Institute focused on real-world software engineering, web development, programming, data, and teamwork.' },
     {
       name: 'buttons',
       type: 'group',
@@ -58,7 +58,7 @@ export const HomeSettings: GlobalConfig = {
       label: 'Projects Section',
       fields: [
         { name: 'title', type: 'text', localized: true, defaultValue: 'Our Projects' },
-        { name: 'subtitle', type: 'textarea', localized: true, defaultValue: 'Innovation in motion. Explore our latest robotic breakthroughs and technical research.' },
+        { name: 'subtitle', type: 'textarea', localized: true, defaultValue: 'Innovation in code. Explore our latest software breakthroughs and technical research.' },
         { name: 'viewAll', type: 'text', localized: true, defaultValue: 'View All Projects' },
       ],
     },
@@ -68,7 +68,7 @@ export const HomeSettings: GlobalConfig = {
       label: 'Events Section',
       fields: [
         { name: 'title', type: 'text', localized: true, defaultValue: 'Experience the Future' },
-        { name: 'subtitle', type: 'textarea', localized: true, defaultValue: 'Join our elite workshops and high-stakes robotics competitions designed to push technical boundaries.' },
+        { name: 'subtitle', type: 'textarea', localized: true, defaultValue: 'Join our hands-on workshops and high-stakes tech competitions designed to push technical boundaries.' },
       ],
     },
     {
@@ -87,7 +87,7 @@ export const HomeSettings: GlobalConfig = {
       label: 'Team Section',
       fields: [
         { name: 'title', type: 'text', localized: true, defaultValue: 'Founding Team' },
-        { name: 'subtitle', type: 'textarea', localized: true, defaultValue: 'Meet the brilliant minds who started this robotics journey and continue to lead our vision.' },
+        { name: 'subtitle', type: 'textarea', localized: true, defaultValue: 'Meet the brilliant minds who started this computing journey and continue to lead our vision.' },
       ],
     },
     {
@@ -97,7 +97,7 @@ export const HomeSettings: GlobalConfig = {
       fields: [
         { name: 'label', type: 'text', localized: true, defaultValue: 'Learning' },
         { name: 'title', type: 'text', localized: true, defaultValue: 'Featured Courses' },
-        { name: 'subtitle', type: 'textarea', localized: true, defaultValue: 'Master robotics and technology with our expert-led courses designed for all skill levels.' },
+        { name: 'subtitle', type: 'textarea', localized: true, defaultValue: 'Master computing and technology with our expert-led courses designed for all skill levels.' },
       ],
     },
     {
@@ -107,7 +107,7 @@ export const HomeSettings: GlobalConfig = {
       fields: [
         { name: 'label', type: 'text', localized: true, defaultValue: 'Blog' },
         { name: 'title', type: 'text', localized: true, defaultValue: 'Latest Updates' },
-        { name: 'subtitle', type: 'textarea', localized: true, defaultValue: 'Stay informed with the latest news, tutorials, and insights from the world of robotics.' },
+        { name: 'subtitle', type: 'textarea', localized: true, defaultValue: 'Stay informed with the latest news, tutorials, and insights from the world of computing.' },
       ],
     },
     {
@@ -123,7 +123,7 @@ export const HomeSettings: GlobalConfig = {
           type: 'group',
           fields: [
             { name: 'title', type: 'text', localized: true, defaultValue: 'Workshops & Training' },
-            { name: 'description', type: 'textarea', localized: true, defaultValue: 'Hands on sessions in robotics, embedded programming, CAD, and rapid prototyping beginner friendly.' },
+            { name: 'description', type: 'textarea', localized: true, defaultValue: 'Hands-on sessions in web development, programming, databases, and rapid prototyping beginner friendly.' },
           ],
         },
         {
@@ -131,7 +131,7 @@ export const HomeSettings: GlobalConfig = {
           type: 'group',
           fields: [
             { name: 'title', type: 'text', localized: true, defaultValue: 'Build Nights' },
-            { name: 'description', type: 'textarea', localized: true, defaultValue: 'Weekly build meetups where we design, iterate, and ship real robots together.' },
+            { name: 'description', type: 'textarea', localized: true, defaultValue: 'Weekly build meetups where we design, iterate, and ship real software together.' },
           ],
         },
         {
@@ -211,7 +211,7 @@ export const HomeSettings: GlobalConfig = {
       label: 'Call to Action Section',
       fields: [
         { name: 'badge', type: 'text', localized: true, defaultValue: 'Get started' },
-        { name: 'title', type: 'text', localized: true, defaultValue: 'Ready to build your next robot?' },
+        { name: 'title', type: 'text', localized: true, defaultValue: 'Ready to build your next project?' },
         { name: 'description', type: 'textarea', localized: true, defaultValue: 'Join DPI Computing Society today and start shipping real projects with mentorship and momentum.' },
         {
           name: 'buttons',

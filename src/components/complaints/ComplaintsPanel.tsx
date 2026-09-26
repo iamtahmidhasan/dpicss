@@ -159,7 +159,7 @@ export function ComplaintsPanel({
             </div>
 
             {(error || success) && (
-              <p className={`text-sm ${error ? 'text-red-600' : 'text-green-600'}`}>
+              <p className={`text-sm ${error ? 'text-destructive' : 'text-success'}`}>
                 {error || success}
               </p>
             )}

@@ -99,7 +99,7 @@ export function DynamicEnrollmentButton({
         <Button className="w-full" size="lg" asChild>
           <a href="#curriculum">Continue Learning</a>
         </Button>
-        <p className="text-center text-xs text-green-600 font-medium">
+        <p className="text-center text-xs text-success font-medium">
           You're enrolled in this course
         </p>
       </>
@@ -186,7 +186,7 @@ function FreeEnrollmentButton({
       <Button className="w-full" size="lg" onClick={handleFreeEnroll} disabled={isLoading}>
         {isLoading ? 'Enrolling...' : 'Enroll for Free'}
       </Button>
-      {error && <p className="text-center text-xs text-red-600">{error}</p>}
+      {error && <p className="text-center text-xs text-destructive">{error}</p>}
     </>
   )
 }

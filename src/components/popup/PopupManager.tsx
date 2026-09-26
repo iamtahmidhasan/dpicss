@@ -188,7 +188,7 @@ export function PopupManager() {
     <Dialog open={isOpen} onOpenChange={(open) => !open && handleClose()}>
       <DialogContent
         className={`w-[95vw] sm:max-w-[90vw] md:max-w-[80vw] lg:max-w-[1000px] w-[90vw] p-0 border-0 gap-0 bg-transparent shadow-none ${animation}`}
-        hideCloseButton
+        showCloseButton={false}
         onPointerDownOutside={(e) => {
           if (!currentPopup.displaySettings.closeOnOverlayClick) {
             e.preventDefault()

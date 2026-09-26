@@ -264,7 +264,7 @@ export default async function CourseSinglePage({ params }: PageProps) {
     pickLocalizedString(course.title as unknown, locale) || 'this course'
   const courseShortDescForSeo =
     pickLocalizedString(course.shortDescription as unknown, locale) ||
-    'Robotics course from DPI Computing Society.'
+    'Computing course from DPI Computing Society.'
 
   const visitorModules = stripModulesForVisitor(modules)
   const preview = findFreePreview(modules)
@@ -402,7 +402,7 @@ export default async function CourseSinglePage({ params }: PageProps) {
                     {course.learningOutcomes.map((o, i) =>
                       o.outcome ? (
                         <li key={i} className="flex gap-2 text-sm">
-                          <CheckCircle2 className="mt-0.5 size-4 shrink-0 text-green-600" />
+                          <CheckCircle2 className="mt-0.5 size-4 shrink-0 text-success" />
                           <span>{o.outcome}</span>
                         </li>
                       ) : null,
@@ -539,15 +539,15 @@ export default async function CourseSinglePage({ params }: PageProps) {
                   <p className="font-medium">{detail.includesTitle}</p>
                   <ul className="space-y-2 text-muted-foreground">
                     <li className="flex gap-2">
-                      <CheckCircle2 className="size-4 shrink-0 text-green-600" />
+                      <CheckCircle2 className="size-4 shrink-0 text-success" />
                       {detail.include1}
                     </li>
                     <li className="flex gap-2">
-                      <CheckCircle2 className="size-4 shrink-0 text-green-600" />
+                      <CheckCircle2 className="size-4 shrink-0 text-success" />
                       {detail.include2}
                     </li>
                     <li className="flex gap-2">
-                      <CheckCircle2 className="size-4 shrink-0 text-green-600" />
+                      <CheckCircle2 className="size-4 shrink-0 text-success" />
                       {detail.include3}
                     </li>
                   </ul>

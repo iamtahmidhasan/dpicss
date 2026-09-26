@@ -204,7 +204,7 @@ export default async function PublicProfilePage({ params }: Args) {
     <div className="mx-auto w-full max-w-6xl p-6">
       <JsonLd data={[profileSchema, breadcrumbSchema]} />
       {showPendingBanner && (
-        <Alert className="mb-6 border-amber-500/40 bg-amber-500/10">
+        <Alert className="mb-6 border-warning/40 bg-warning/10">
           <AlertTitle>{t(messages, 'profile.awaitingApproval')}</AlertTitle>
           <AlertDescription>{t(messages, 'profile.approvalMessage')}</AlertDescription>
         </Alert>
@@ -456,7 +456,7 @@ export default async function PublicProfilePage({ params }: Args) {
               <CardContent className="space-y-4">
                 <div className="flex justify-between items-center p-3 bg-muted/50 rounded-lg">
                   <div className="flex items-center gap-2">
-                    <Star className="h-4 w-4 text-blue-500" />
+                    <Star className="h-4 w-4 text-cat-blue" />
                     <span className="text-sm text-muted-foreground">
                       {t(messages, 'profile.currentLevel')}
                     </span>
@@ -465,7 +465,7 @@ export default async function PublicProfilePage({ params }: Args) {
                 </div>
                 <div className="flex justify-between items-center p-3 bg-muted/50 rounded-lg">
                   <div className="flex items-center gap-2">
-                    <BookOpen className="h-4 w-4 text-green-500" />
+                    <BookOpen className="h-4 w-4 text-success" />
                     <span className="text-sm text-muted-foreground">
                       {t(messages, 'profile.enrollments')}
                     </span>
@@ -474,7 +474,7 @@ export default async function PublicProfilePage({ params }: Args) {
                 </div>
                 <div className="flex justify-between items-center p-3 bg-muted/50 rounded-lg">
                   <div className="flex items-center gap-2">
-                    <Award className="h-4 w-4 text-purple-500" />
+                    <Award className="h-4 w-4 text-cat-violet" />
                     <span className="text-sm text-muted-foreground">
                       {t(messages, 'profile.certificates')}
                     </span>
@@ -585,8 +585,8 @@ export default async function PublicProfilePage({ params }: Args) {
                     key={enrollment.id}
                     className="flex items-center gap-3 p-3 bg-muted/50 rounded-lg"
                   >
-                    <div className="h-8 w-8 bg-blue-500/10 rounded-full flex items-center justify-center">
-                      <BookOpen className="h-4 w-4 text-blue-600" />
+                    <div className="h-8 w-8 bg-cat-blue/10 rounded-full flex items-center justify-center">
+                      <BookOpen className="h-4 w-4 text-cat-blue" />
                     </div>
                     <div className="flex-1">
                       <p className="text-sm font-medium">
@@ -603,8 +603,8 @@ export default async function PublicProfilePage({ params }: Args) {
 
                 {member.certificateId ? (
                   <div className="flex items-center gap-3 p-3 bg-muted/50 rounded-lg">
-                    <div className="h-8 w-8 bg-green-500/10 rounded-full flex items-center justify-center">
-                      <Award className="h-4 w-4 text-green-600" />
+                    <div className="h-8 w-8 bg-success/10 rounded-full flex items-center justify-center">
+                      <Award className="h-4 w-4 text-success" />
                     </div>
                     <div className="flex-1">
                       <p className="text-sm font-medium">

@@ -87,15 +87,15 @@ function getBestCommitteePriority(m: MemberData, priorityMap: Map<string, number
 }
 
 const BADGE_CLASSES: Record<string, string> = {
-  amber: 'bg-amber-500/15 text-amber-700 dark:text-amber-400 border-amber-500/30',
-  violet: 'bg-violet-500/15 text-violet-700 dark:text-violet-400 border-violet-500/30',
-  sky: 'bg-sky-500/15 text-sky-700 dark:text-sky-400 border-sky-500/30',
-  emerald: 'bg-emerald-500/15 text-emerald-700 dark:text-emerald-400 border-emerald-500/30',
-  blue: 'bg-blue-500/15 text-blue-700 dark:text-blue-400 border-blue-500/30',
-  rose: 'bg-rose-500/15 text-rose-700 dark:text-rose-400 border-rose-500/30',
-  orange: 'bg-orange-500/15 text-orange-700 dark:text-orange-400 border-orange-500/30',
-  teal: 'bg-teal-500/15 text-teal-700 dark:text-teal-400 border-teal-500/30',
-  slate: 'bg-slate-500/15 text-slate-700 dark:text-slate-400 border-slate-500/30',
+  amber: 'bg-cat-amber/15 text-cat-amber border-cat-amber/30',
+  violet: 'bg-cat-violet/15 text-cat-violet border-cat-violet/30',
+  sky: 'bg-cat-sky/15 text-cat-sky border-cat-sky/30',
+  emerald: 'bg-cat-emerald/15 text-cat-emerald border-cat-emerald/30',
+  blue: 'bg-cat-blue/15 text-cat-blue border-cat-blue/30',
+  rose: 'bg-cat-rose/15 text-cat-rose border-cat-rose/30',
+  orange: 'bg-cat-orange/15 text-cat-orange border-cat-orange/30',
+  teal: 'bg-cat-teal/15 text-cat-teal border-cat-teal/30',
+  slate: 'bg-cat-slate/15 text-muted-foreground border-cat-slate/30',
 }
 
 function getRoleBadges(m: MemberData) {

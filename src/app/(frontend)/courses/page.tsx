@@ -204,7 +204,7 @@ export default async function CoursesPage({ searchParams }: { searchParams: Sear
                     <Badge variant="outline" className="font-normal">
                       {categoryLabel(course.category, coursesSettings.categoryFallback)}
                     </Badge>
-                    <span className="ml-auto flex items-center gap-1 text-sm text-amber-600">
+                    <span className="ml-auto flex items-center gap-1 text-sm text-warning">
                       <Star className="size-4 fill-current" />
                       {typeof course.averageRating === 'number' && course.averageRating > 0
                         ? course.averageRating.toFixed(1)

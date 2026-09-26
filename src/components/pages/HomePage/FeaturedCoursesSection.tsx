@@ -34,9 +34,9 @@ type FeaturedCoursesSectionProps = {
 }
 
 const levelColors: Record<string, string> = {
-  beginner: 'bg-emerald-500/10 text-emerald-600 dark:text-emerald-400',
-  intermediate: 'bg-amber-500/10 text-amber-600 dark:text-amber-400',
-  advanced: 'bg-rose-500/10 text-rose-600 dark:text-rose-400',
+  beginner: 'bg-cat-emerald/10 text-cat-emerald',
+  intermediate: 'bg-cat-sky/10 text-cat-sky',
+  advanced: 'bg-cat-rose/10 text-cat-rose',
 }
 
 export default function FeaturedCoursesSection({
@@ -65,7 +65,7 @@ export default function FeaturedCoursesSection({
           </h2>
           <p className="text-lg text-muted-foreground md:text-xl leading-relaxed">
             {localizedField(homeSettings.coursesSection?.subtitle, lang) ||
-              'Master robotics and technology with our expert-led courses designed for all skill levels.'}
+              'Master computing and technology with our expert-led courses designed for all skill levels.'}
           </p>
         </div>
 
@@ -119,7 +119,7 @@ export default function FeaturedCoursesSection({
                 )}
                 {featuredCourse.averageRating !== undefined && featuredCourse.averageRating > 0 && (
                   <span className="flex items-center gap-1.5">
-                    <Star className="size-4 fill-yellow-400 text-yellow-400" />
+                    <Star className="size-4 fill-warning text-warning" />
                     {featuredCourse.averageRating.toFixed(1)}
                   </span>
                 )}

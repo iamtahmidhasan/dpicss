@@ -308,7 +308,7 @@ export function CourseCurriculumLocked({
                         {lesson.type === 'video' ? (
                           <PlayCircle className="size-4 shrink-0" />
                         ) : lesson.type === 'live' ? (
-                          <Video className="size-4 shrink-0 text-red-500" />
+                          <Video className="size-4 shrink-0 text-destructive" />
                         ) : (
                           <FileText className="size-4 shrink-0" />
                         )}

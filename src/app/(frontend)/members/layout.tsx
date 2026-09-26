@@ -5,7 +5,7 @@ export const metadata = createPageMetadata({
   title: 'Members',
   description: 'Meet active DPICS members and explore their public profiles and accomplishments.',
   path: '/members',
-  keywords: ['DPICS members', 'robotics community', 'student profiles'],
+  keywords: ['DPICS members', 'computing community', 'student profiles'],
 })
 
 export default function MembersLayout({ children }: { children: ReactNode }) {

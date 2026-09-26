@@ -116,7 +116,7 @@ export const Projects: CollectionConfig = {
       type: 'select',
       required: true,
       options: [
-        { label: 'Competition Robot', value: 'competition' },
+        { label: 'Competition Project', value: 'competition' },
         { label: 'Research', value: 'research' },
         { label: 'Education', value: 'education' },
         { label: 'Automation', value: 'automation' },

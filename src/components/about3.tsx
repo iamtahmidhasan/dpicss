@@ -37,12 +37,12 @@ export function About3({ className, aboutSettings, lang }: About3Props) {
 
   const mainImage = {
     src: HERO_IMAGE_SRC,
-    alt: 'Robotics Feature',
+    alt: 'Computing Feature',
   }
 
   const secondaryImage = {
     src: 'https://images.unsplash.com/photo-1775019062004-6e1ca1e15d23?q=80&w=764&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-    alt: 'Robotics Workshop',
+    alt: 'Computing Workshop',
   }
 
   const achievements = [
@@ -98,7 +98,7 @@ export function About3({ className, aboutSettings, lang }: About3Props) {
                 <p className="mb-2 text-lg font-semibold">DPI Computing Society</p>
                 <p className="text-muted-foreground">
                   {aboutSettings.heroCard.description ||
-                    'Empowering students with practical robotics knowledge.'}
+                    'Empowering students with practical computing knowledge.'}
                 </p>
               </div>
               <Button variant="outline" className="mr-auto" asChild>

@@ -30,9 +30,9 @@ type FeaturedAchievementsSectionProps = {
 }
 
 const badgeColors: Record<string, string> = {
-  Champion: 'bg-yellow-500/20 text-yellow-600 border-yellow-500/30',
-  Winner: 'bg-emerald-500/20 text-emerald-600 border-emerald-500/30',
-  Finalist: 'bg-blue-500/20 text-blue-600 border-blue-500/30',
+  Champion: 'bg-warning/20 text-warning border-warning/30',
+  Winner: 'bg-cat-emerald/20 text-cat-emerald border-cat-emerald/30',
+  Finalist: 'bg-cat-blue/20 text-cat-blue border-cat-blue/30',
 }
 
 function formatDate(dateString?: string): string {
@@ -74,7 +74,7 @@ export default function FeaturedAchievementsSection({
           </h1>
           <p className="text-lg text-muted-foreground md:text-xl leading-relaxed max-w-2xl">
             {homeSettings.achievementsSection.subtitle ||
-              'A legacy of innovation and competitive excellence in global robotics.'}
+              'A legacy of innovation and competitive excellence in global computing.'}
           </p>
         </div>
 

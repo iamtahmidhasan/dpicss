@@ -23,7 +23,7 @@ export const SponsorsSettings: GlobalConfig = {
       type: 'textarea',
       localized: true,
       defaultValue:
-        'We are grateful to the organizations that support our mission to inspire innovation and learning in robotics and technology.',
+        'We are grateful to the organizations that support our mission to inspire innovation and learning in computing and technology.',
     },
     {
       name: 'empty',

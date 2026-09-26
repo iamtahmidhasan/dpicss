@@ -63,7 +63,7 @@ export default function ForgotPasswordPage() {
                 </Field>
                 {(message || error) && (
                   <Field>
-                    <FieldDescription className={error ? 'text-red-600' : 'text-green-600'}>
+                    <FieldDescription className={error ? 'text-destructive' : 'text-success'}>
                       {error || message}
                     </FieldDescription>
                   </Field>

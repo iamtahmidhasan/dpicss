@@ -388,7 +388,7 @@ export function OfficialMemberDetailsEditTab({ profile }: { profile: ProfileData
         {existingUrl && !files[fieldName] && (
           <div className="flex items-center justify-between p-3 bg-muted rounded-lg">
             <div className="flex items-center gap-2 flex-1 min-w-0">
-              <CheckCircle2 className="h-4 w-4 text-green-600 flex-shrink-0" />
+              <CheckCircle2 className="h-4 w-4 text-success flex-shrink-0" />
               <span className="text-sm text-muted-foreground truncate">Uploaded</span>
             </div>
             {isEditing && (
@@ -396,7 +396,7 @@ export function OfficialMemberDetailsEditTab({ profile }: { profile: ProfileData
                 href={existingUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-xs text-blue-600 hover:underline"
+                className="text-xs text-info hover:underline"
               >
                 <Download className="h-4 w-4 inline mr-1" />
                 View
@@ -405,9 +405,9 @@ export function OfficialMemberDetailsEditTab({ profile }: { profile: ProfileData
           </div>
         )}
         {files[fieldName] && (
-          <div className="p-3 bg-blue-50 rounded-lg">
-            <p className="text-sm font-medium text-blue-900">{files[fieldName]!.name}</p>
-            <p className="text-xs text-blue-700">Ready to upload</p>
+          <div className="p-3 bg-info-soft rounded-lg">
+            <p className="text-sm font-medium text-info-foreground">{files[fieldName]!.name}</p>
+            <p className="text-xs text-info-foreground">Ready to upload</p>
           </div>
         )}
         {isEditing && (
@@ -557,7 +557,7 @@ export function OfficialMemberDetailsEditTab({ profile }: { profile: ProfileData
                     href={profile.nidOrBirthCertificate.url}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-xs text-blue-600 hover:underline"
+                    className="text-xs text-info hover:underline"
                   >
                     View
                   </a>
@@ -570,7 +570,7 @@ export function OfficialMemberDetailsEditTab({ profile }: { profile: ProfileData
                     href={profile.studentIdCard.url}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-xs text-blue-600 hover:underline"
+                    className="text-xs text-info hover:underline"
                   >
                     View
                   </a>
@@ -583,7 +583,7 @@ export function OfficialMemberDetailsEditTab({ profile }: { profile: ProfileData
                     href={profile.passportSizeImage.url}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-xs text-blue-600 hover:underline"
+                    className="text-xs text-info hover:underline"
                   >
                     View
                   </a>
@@ -644,7 +644,7 @@ export function OfficialMemberDetailsEditTab({ profile }: { profile: ProfileData
                         onClick={() => copyToClipboard(bkashNum, 'bkash')}
                       >
                         {showCopied === 'bkash' ? (
-                          <CheckCircle2 className="size-3 text-green-600" />
+                          <CheckCircle2 className="size-3 text-success" />
                         ) : (
                           <Copy className="size-3" />
                         )}
@@ -671,7 +671,7 @@ export function OfficialMemberDetailsEditTab({ profile }: { profile: ProfileData
                         onClick={() => copyToClipboard(nagadNum, 'nagad')}
                       >
                         {showCopied === 'nagad' ? (
-                          <CheckCircle2 className="size-3 text-green-600" />
+                          <CheckCircle2 className="size-3 text-success" />
                         ) : (
                           <Copy className="size-3" />
                         )}
@@ -698,7 +698,7 @@ export function OfficialMemberDetailsEditTab({ profile }: { profile: ProfileData
                         onClick={() => copyToClipboard(rocketNum, 'rocket')}
                       >
                         {showCopied === 'rocket' ? (
-                          <CheckCircle2 className="size-3 text-green-600" />
+                          <CheckCircle2 className="size-3 text-success" />
                         ) : (
                           <Copy className="size-3" />
                         )}
@@ -744,7 +744,7 @@ export function OfficialMemberDetailsEditTab({ profile }: { profile: ProfileData
                             }
                           >
                             {showCopied === 'bank-account' ? (
-                              <CheckCircle2 className="size-2.5 text-green-600" />
+                              <CheckCircle2 className="size-2.5 text-success" />
                             ) : (
                               <Copy className="size-2.5" />
                             )}
@@ -965,14 +965,14 @@ export function OfficialMemberDetailsEditTab({ profile }: { profile: ProfileData
 
             {/* Messages */}
             {error && (
-              <Alert className="border-red-200 bg-red-50">
-                <AlertDescription className="text-red-800">{error}</AlertDescription>
+              <Alert className="border-destructive-border bg-destructive-soft">
+                <AlertDescription className="text-destructive-foreground">{error}</AlertDescription>
               </Alert>
             )}
 
             {message && (
-              <Alert className="border-green-200 bg-green-50">
-                <AlertDescription className="text-green-800 flex items-center gap-2">
+              <Alert className="border-success-border bg-success-soft">
+                <AlertDescription className="text-success-foreground flex items-center gap-2">
                   <CheckCircle2 className="h-4 w-4" />
                   {message}
                 </AlertDescription>

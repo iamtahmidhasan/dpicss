@@ -310,7 +310,7 @@ export function LoginForm({ className, ...props }: React.ComponentProps<'div'>) 
                 </Field>
                 {(error || message) && (
                   <Field>
-                    <FieldDescription className={error ? 'text-red-600' : 'text-green-600'}>
+                    <FieldDescription className={error ? 'text-destructive' : 'text-success'}>
                       {error || message}
                     </FieldDescription>
                   </Field>
@@ -419,7 +419,7 @@ export function LoginForm({ className, ...props }: React.ComponentProps<'div'>) 
                   )}
                 </Button>
                 {error && (
-                  <FieldDescription className="text-center text-red-600">{error}</FieldDescription>
+                  <FieldDescription className="text-center text-destructive">{error}</FieldDescription>
                 )}
                 <FieldDescription className="text-center">
                   Don&apos;t have an account? <Link href="/register">Sign up</Link>

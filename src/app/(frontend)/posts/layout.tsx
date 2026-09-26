@@ -3,9 +3,9 @@ import { createPageMetadata } from '@/lib/seo'
 
 export const metadata = createPageMetadata({
   title: 'Blog Posts',
-  description: 'Read robotics tutorials, announcements, and engineering insights from DPICS.',
+  description: 'Read computing tutorials, announcements, and engineering insights from DPICS.',
   path: '/posts',
-  keywords: ['robotics blog', 'DPICS posts', 'engineering tutorials'],
+  keywords: ['computing blog', 'DPICS posts', 'engineering tutorials'],
 })
 
 export default function PostsLayout({ children }: { children: ReactNode }) {

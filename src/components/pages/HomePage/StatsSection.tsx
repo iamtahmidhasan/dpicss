@@ -52,7 +52,7 @@ export default function StatsSection({ lang, homeSettings, stats }: StatsSection
             ].map((stat) => (
               <Card
                 key={stat.label}
-                className="border border-border/70 bg-card/90 shadow-sm shadow-slate-950/5"
+                className="border border-border/70 bg-card/90 shadow-sm shadow-foreground/5"
               >
                 <CardContent className="space-y-2 p-6">
                   <p className="text-4xl font-semibold text-primary">

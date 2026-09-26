@@ -72,7 +72,7 @@ export default function FeaturedPostsSection({
           </h2>
           <p className="text-lg text-muted-foreground md:text-xl leading-relaxed">
             {localizedField(homeSettings.postsSection?.subtitle, lang) ||
-              'Stay informed with the latest news, tutorials, and insights from the world of robotics.'}
+              'Stay informed with the latest news, tutorials, and insights from the world of computing.'}
           </p>
         </div>
 
@@ -113,7 +113,7 @@ export default function FeaturedPostsSection({
                 )}
               </div>
 
-              <h3 className="text-3xl font-semibold mb-4 text-gray-700">{featuredPost.title}</h3>
+              <h3 className="text-3xl font-semibold mb-4 text-muted-foreground">{featuredPost.title}</h3>
               <p className="max-w-md text-muted-foreground text-lg mb-6 line-clamp-2">
                 {featuredPost.excerpt}
               </p>

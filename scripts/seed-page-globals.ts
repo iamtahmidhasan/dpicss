@@ -454,8 +454,8 @@ async function run() {
     data: {
       title: loc('Our Partners & Sponsors', 'আমাদের পার্টনার ও স্পন্সর'),
       subtitle: loc(
-        'We are grateful to the organizations that support our mission to inspire innovation and learning in robotics and technology.',
-        'আমাদের রোবোটিক্স ও প্রযুক্তিতে উদ্ভাবন এবং শেখার মিশনকে সমর্থনকারী প্রতিষ্ঠানগুলোর প্রতি আমরা কৃতজ্ঞ।',
+        'We are grateful to the organizations that support our mission to inspire innovation and learning in computing and technology.',
+        'আমাদের কম্পিউটিং ও প্রযুক্তিতে উদ্ভাবন এবং শেখার মিশনকে সমর্থনকারী প্রতিষ্ঠানগুলোর প্রতি আমরা কৃতজ্ঞ।',
       ),
       empty: loc('No partners or sponsors yet. Check back soon!', 'এখনও কোনো পার্টনার বা স্পন্সর নেই। শীঘ্রই দেখুন!'),
       untitled: loc('Sponsor', 'স্পন্সর'),
@@ -482,7 +482,7 @@ async function run() {
     slug: 'projects-settings',
     data: {
       title: projLoc('Projects', 'প্রজেক্ট'),
-      subtitle: projLoc('Explore our robotics and automation projects', 'আমাদের রোবোটিক্স ও অটোমেশন প্রজেক্টগুলো দেখুন'),
+      subtitle: projLoc('Explore our software and automation projects', 'আমাদের সফটওয়্যার ও অটোমেশন প্রজেক্টগুলো দেখুন'),
       featured: projLoc('Featured Projects', 'ফিচার্ড প্রজেক্ট'),
       all: projLoc('All Projects', 'সব প্রজেক্ট'),
       noProjects: projLoc('No projects found.', 'কোনো প্রজেক্ট পাওয়া যায়নি।'),
@@ -502,7 +502,7 @@ async function run() {
       endDate: projLoc('Completed', 'শেষ'),
       noBio: projLoc('No bio available.', 'কোনো বায়ো নেই।'),
       categories: [
-        { key: 'competition', label: projLoc('Competition Robot', 'প্রতিযোগিতা রোবোট') },
+        { key: 'competition', label: projLoc('Competition Project', 'প্রতিযোগিতা প্রকল্প') },
         { key: 'research', label: projLoc('Research', 'গবেষণা') },
         { key: 'education', label: projLoc('Education', 'শিক্ষা') },
         { key: 'automation', label: projLoc('Automation', 'অটোমেশন') },

@@ -40,7 +40,7 @@ export default function WorkflowSection({ lang, homeSettings, className }: Workf
           <div className="hidden lg:block pt-10">
             <div className="h-px w-full bg-gradient-to-r from-border to-transparent" />
             <p className="mt-4 text-xs font-bold uppercase tracking-[0.2em] text-muted-foreground/50">
-              Robotics Lifecycle
+              Software Development Lifecycle
             </p>
           </div>
         </div>

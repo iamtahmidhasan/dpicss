@@ -343,8 +343,8 @@ export function BuyTicketDialog({
         {success ? (
           <>
             <DialogHeader>
-              <div className="mx-auto mb-4 flex size-12 items-center justify-center rounded-full bg-green-100">
-                <CheckCircle2 className="size-6 text-green-600" />
+              <div className="mx-auto mb-4 flex size-12 items-center justify-center rounded-full bg-success-muted">
+                <CheckCircle2 className="size-6 text-success" />
               </div>
               <DialogTitle className="text-center">{messages.success}</DialogTitle>
               <DialogDescription className="text-center">
@@ -377,7 +377,7 @@ export function BuyTicketDialog({
               <div className="grid gap-2">
                 <Label htmlFor="buyerName">
                   {messages.buyerName}
-                  <span className="text-red-500">*</span>
+                  <span className="text-destructive">*</span>
                 </Label>
                 <Input
                   id="buyerName"
@@ -391,7 +391,7 @@ export function BuyTicketDialog({
               <div className="grid gap-2">
                 <Label htmlFor="buyerEmail">
                   {messages.buyerEmail}
-                  <span className="text-red-500">*</span>
+                  <span className="text-destructive">*</span>
                 </Label>
                 <Input
                   id="buyerEmail"
@@ -406,7 +406,7 @@ export function BuyTicketDialog({
               <div className="grid gap-2">
                 <Label htmlFor="buyerPhone">
                   {messages.buyerPhone}
-                  <span className="text-red-500">*</span>
+                  <span className="text-destructive">*</span>
                 </Label>
                 <Input
                   id="buyerPhone"
@@ -439,7 +439,7 @@ export function BuyTicketDialog({
                         onClick={() => copyToClipboard(getPaymentNumber('bkash'), 'bkash')}
                       >
                         {showCopied === 'bkash' ? (
-                          <CheckCircle2 className="size-3 text-green-600" />
+                          <CheckCircle2 className="size-3 text-success" />
                         ) : (
                           <Copy className="size-3" />
                         )}
@@ -466,7 +466,7 @@ export function BuyTicketDialog({
                         onClick={() => copyToClipboard(getPaymentNumber('nagad'), 'nagad')}
                       >
                         {showCopied === 'nagad' ? (
-                          <CheckCircle2 className="size-3 text-green-600" />
+                          <CheckCircle2 className="size-3 text-success" />
                         ) : (
                           <Copy className="size-3" />
                         )}
@@ -488,7 +488,7 @@ export function BuyTicketDialog({
                         onClick={() => copyToClipboard(getPaymentNumber('rocket'), 'rocket')}
                       >
                         {showCopied === 'rocket' ? (
-                          <CheckCircle2 className="size-3 text-green-600" />
+                          <CheckCircle2 className="size-3 text-success" />
                         ) : (
                           <Copy className="size-3" />
                         )}
@@ -536,7 +536,7 @@ export function BuyTicketDialog({
                             }
                           >
                             {showCopied === 'bank-account' ? (
-                              <CheckCircle2 className="size-2.5 text-green-600" />
+                              <CheckCircle2 className="size-2.5 text-success" />
                             ) : (
                               <Copy className="size-2.5" />
                             )}
@@ -568,7 +568,7 @@ export function BuyTicketDialog({
               <div className="grid gap-2">
                 <Label htmlFor="paymentMethod">
                   {messages.paymentMethod}
-                  <span className="text-red-500">*</span>
+                  <span className="text-destructive">*</span>
                 </Label>
                 <Select
                   value={formData.paymentMethod}
@@ -608,7 +608,7 @@ export function BuyTicketDialog({
                       className="shrink-0"
                     >
                       {showCopied === 'payment-number' ? (
-                        <CheckCircle2 className="size-4 text-green-600" />
+                        <CheckCircle2 className="size-4 text-success" />
                       ) : (
                         <Copy className="size-4" />
                       )}
@@ -669,7 +669,7 @@ export function BuyTicketDialog({
                 <div className="grid gap-2">
                   <Label htmlFor="senderNumber">
                     {t('Sender Number', 'প্রেরক নম্বর')}
-                    <span className="text-red-500">*</span>
+                    <span className="text-destructive">*</span>
                   </Label>
                   <Input
                     id="senderNumber"
@@ -691,7 +691,7 @@ export function BuyTicketDialog({
                 <div className="grid gap-2">
                   <Label htmlFor="transactionId">
                     {messages.transactionId}
-                    <span className="text-red-500">*</span>
+                    <span className="text-destructive">*</span>
                   </Label>
                   <Input
                     id="transactionId"
@@ -717,7 +717,7 @@ export function BuyTicketDialog({
                 <div className="grid gap-2">
                   <Label htmlFor="transactionId-bank">
                     {messages.transactionId}
-                    <span className="text-red-500">*</span>
+                    <span className="text-destructive">*</span>
                   </Label>
                   <Input
                     id="transactionId-bank"
@@ -777,7 +777,7 @@ export function BuyTicketDialog({
 
               {/* Error Display */}
               {error && (
-                <div className="flex items-center gap-2 text-sm text-red-600 bg-red-50 p-2 rounded-md dark:bg-red-950">
+                <div className="flex items-center gap-2 text-sm text-destructive bg-destructive-soft p-2 rounded-md dark:bg-destructive-soft">
                   <AlertCircle className="size-4 shrink-0" />
                   <span>{error}</span>
                 </div>

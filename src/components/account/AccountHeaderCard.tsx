@@ -69,7 +69,7 @@ export function AccountHeaderCard({
                   {isVerified && (
                     <Badge
                       variant="outline"
-                      className="border-green-400/50 bg-green-400/10 text-green-300"
+                      className="border-success/50 bg-success/10 text-success-on-inverse"
                     >
                       <CheckCircle className="mr-1 h-3 w-3" />
                       Verified
@@ -77,7 +77,7 @@ export function AccountHeaderCard({
                   )}
                   {isAdmin && (
                     <Link href="/admin" className="flex items-center">
-                      <Badge variant="destructive" className="bg-red-400/20 text-red-300">
+                      <Badge variant="destructive" className="bg-destructive/20 text-destructive-on-inverse">
                         <Shield className="mr-1 h-3 w-3" />
                         Admin
                       </Badge>

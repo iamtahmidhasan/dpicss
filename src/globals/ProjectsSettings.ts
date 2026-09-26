@@ -35,7 +35,7 @@ export const ProjectsSettings: GlobalConfig = {
   },
   fields: [
     { name: 'title', type: 'text', localized: true, defaultValue: 'Projects' },
-    { name: 'subtitle', type: 'textarea', localized: true, defaultValue: 'Explore our robotics and automation projects' },
+    { name: 'subtitle', type: 'textarea', localized: true, defaultValue: 'Explore our software and automation projects' },
     { name: 'featured', type: 'text', localized: true, defaultValue: 'Featured Projects' },
     { name: 'all', type: 'text', localized: true, defaultValue: 'All Projects' },
     { name: 'noProjects', type: 'text', localized: true, defaultValue: 'No projects found.' },
@@ -55,7 +55,7 @@ export const ProjectsSettings: GlobalConfig = {
     { name: 'endDate', type: 'text', localized: true, defaultValue: 'Completed' },
     { name: 'noBio', type: 'text', localized: true, defaultValue: 'No bio available.' },
     keyedLocalizedFields('categories', {
-      competition: { en: 'Competition Robot', bn: 'প্রতিযোগিতা রোবোট' },
+      competition: { en: 'Competition Project', bn: 'প্রতিযোগিতা প্রকল্প' },
       research: { en: 'Research', bn: 'গবেষণা' },
       education: { en: 'Education', bn: 'শিক্ষা' },
       automation: { en: 'Automation', bn: 'অটোমেশন' },

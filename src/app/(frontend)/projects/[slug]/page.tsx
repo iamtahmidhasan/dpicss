@@ -256,7 +256,7 @@ export default async function ProjectSinglePage({ params }: PageProps) {
                   <div className="space-y-2">
                     {projectAwards(project).map((award, i) => (
                       <div key={i} className="flex items-center gap-3 rounded-lg border p-3">
-                        <Trophy className="size-5 text-yellow-500" />
+                        <Trophy className="size-5 text-warning" />
                         <div>
                           <p className="font-medium">{award.competition}</p>
                           {award.position && (

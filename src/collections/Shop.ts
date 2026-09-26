@@ -88,7 +88,7 @@ export const Shop: CollectionConfig = {
       required: true,
       defaultValue: 'other',
       options: [
-        { label: 'Robotics kits & parts', value: 'kits' },
+        { label: 'Club merchandise & kits', value: 'kits' },
         { label: 'Apparel', value: 'apparel' },
         { label: 'Electronics', value: 'electronics' },
         { label: 'Books & learning', value: 'books' },

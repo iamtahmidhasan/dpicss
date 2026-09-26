@@ -79,7 +79,7 @@ export function MissionVision({
   const title = aboutSettings.missionVision.title || 'Mission & Vision'
   const description =
     aboutSettings.missionVision.description ||
-    'Our purpose and aspirations for the future of robotics and education.'
+    'Our purpose and aspirations for the future of computing and education.'
 
   const [advisorApi, setAdvisorApi] = React.useState<CarouselApi>()
   const [execApi, setExecApi] = React.useState<CarouselApi>()

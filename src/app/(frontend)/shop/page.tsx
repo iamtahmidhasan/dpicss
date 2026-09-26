@@ -143,7 +143,7 @@ export default async function ShopPage({ searchParams }: { searchParams: SearchP
                     <Badge variant="outline" className="font-normal">
                       {categoryLabel(undefined, item.productCategory, shopSettings.categoryFallback)}
                     </Badge>
-                    <span className="ml-auto flex items-center gap-1 text-sm text-amber-600">
+                    <span className="ml-auto flex items-center gap-1 text-sm text-warning">
                       <Star className="size-4 fill-current" />
                       {item.isFeatured ? '★' : '—'}
                     </span>

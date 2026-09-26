@@ -441,7 +441,7 @@ export default function RegisterPage() {
                   </Field>
                   {usernameError && (
                     <Field>
-                      <FieldDescription className="text-red-600">{usernameError}</FieldDescription>
+                      <FieldDescription className="text-destructive">{usernameError}</FieldDescription>
                     </Field>
                   )}
                   <Field>
@@ -698,7 +698,7 @@ export default function RegisterPage() {
                   )}
                   {(error || message) && (
                     <Field>
-                      <FieldDescription className={error ? 'text-red-600' : 'text-green-600'}>
+                      <FieldDescription className={error ? 'text-destructive' : 'text-success'}>
                         {error || message}
                       </FieldDescription>
                     </Field>

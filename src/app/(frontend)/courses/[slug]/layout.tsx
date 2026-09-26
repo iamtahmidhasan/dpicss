@@ -49,11 +49,11 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   }
 
   const doc = found.docs[0] as CourseSeoDoc
-  const title = doc.seo?.metaTitle || pickLocalizedString(doc.title, locale) || 'Robotics Course'
+  const title = doc.seo?.metaTitle || pickLocalizedString(doc.title, locale) || 'DPICS Course'
   const description =
     doc.seo?.metaDescription ||
     pickLocalizedString(doc.shortDescription, locale) ||
-    'Explore this robotics course from DPI Computing Society.'
+    'Explore this computing course from DPI Computing Society.'
 
   const imageUrl =
     doc.thumbnail && typeof doc.thumbnail === 'object' ? doc.thumbnail.url : undefined

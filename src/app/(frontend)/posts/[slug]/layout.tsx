@@ -52,11 +52,11 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
   const doc = found.docs[0] as PostSeoDoc
   const title =
-    doc.seo?.metaTitle || pickLocalizedString(doc.title, locale) || 'Robotics Post'
+    doc.seo?.metaTitle || pickLocalizedString(doc.title, locale) || 'DPICS Post'
   const description =
     doc.seo?.metaDescription ||
     pickLocalizedString(doc.excerpt, locale) ||
-    'Read this robotics article from DPI Computing Society.'
+    'Read this article from DPI Computing Society.'
 
   const siteSettings = (await (payload as any).findGlobal({ slug: 'site-settings' })) as { posts?: { authorName?: string } }
   const author = siteSettings.posts?.authorName || 'DPICS Team'

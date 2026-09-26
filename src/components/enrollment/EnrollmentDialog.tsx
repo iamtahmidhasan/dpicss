@@ -254,18 +254,18 @@ export function EnrollmentDialog({ course, userEmail, open, onOpenChange }: Enro
           </DialogHeader>
           <div className="py-4 space-y-4">
             <div className="flex justify-center">
-              <div className="flex size-12 items-center justify-center rounded-full bg-green-100">
-                <CheckCircle2 className="size-6 text-green-600" />
+              <div className="flex size-12 items-center justify-center rounded-full bg-success-muted">
+                <CheckCircle2 className="size-6 text-success" />
               </div>
             </div>
-            <div className="bg-yellow-50 dark:bg-yellow-900/20 rounded-lg p-4 border border-yellow-200 dark:border-yellow-800">
+            <div className="bg-warning-soft dark:bg-warning-foreground/20 rounded-lg p-4 border border-warning-border dark:border-warning-foreground">
               <div className="flex items-start gap-3">
-                <Info className="size-5 text-yellow-600 dark:text-yellow-500 mt-0.5 shrink-0" />
+                <Info className="size-5 text-warning dark:text-warning mt-0.5 shrink-0" />
                 <div className="space-y-1 text-sm">
-                  <p className="font-medium text-yellow-800 dark:text-yellow-200">
+                  <p className="font-medium text-warning-foreground dark:text-warning-border">
                     {t('What happens next?', 'পরবর্তী পদক্ষেপ কী?')}
                   </p>
-                  <ul className="text-yellow-700 dark:text-yellow-300 space-y-1 list-disc list-inside">
+                  <ul className="text-warning-foreground dark:text-warning-foreground space-y-1 list-disc list-inside">
                     <li>
                       {t(
                         'Admin will review your payment details',
@@ -338,7 +338,7 @@ export function EnrollmentDialog({ course, userEmail, open, onOpenChange }: Enro
                       onClick={() => copyToClipboard(getCoursePaymentNumber('bkash'), 'bkash')}
                     >
                       {showCopied === 'bkash' ? (
-                        <CheckCircle2 className="size-3 text-green-600" />
+                        <CheckCircle2 className="size-3 text-success" />
                       ) : (
                         <Copy className="size-3" />
                       )}
@@ -366,7 +366,7 @@ export function EnrollmentDialog({ course, userEmail, open, onOpenChange }: Enro
                       onClick={() => copyToClipboard(getCoursePaymentNumber('nagad'), 'nagad')}
                     >
                       {showCopied === 'nagad' ? (
-                        <CheckCircle2 className="size-3 text-green-600" />
+                        <CheckCircle2 className="size-3 text-success" />
                       ) : (
                         <Copy className="size-3" />
                       )}
@@ -391,7 +391,7 @@ export function EnrollmentDialog({ course, userEmail, open, onOpenChange }: Enro
                       onClick={() => copyToClipboard(getCoursePaymentNumber('rocket'), 'rocket')}
                     >
                       {showCopied === 'rocket' ? (
-                        <CheckCircle2 className="size-3 text-green-600" />
+                        <CheckCircle2 className="size-3 text-success" />
                       ) : (
                         <Copy className="size-3" />
                       )}
@@ -435,7 +435,7 @@ export function EnrollmentDialog({ course, userEmail, open, onOpenChange }: Enro
                         }
                       >
                         {showCopied === 'bank-account' ? (
-                          <CheckCircle2 className="size-2.5 text-green-600" />
+                          <CheckCircle2 className="size-2.5 text-success" />
                         ) : (
                           <Copy className="size-2.5" />
                         )}
@@ -470,7 +470,7 @@ export function EnrollmentDialog({ course, userEmail, open, onOpenChange }: Enro
                         }
                       >
                         {showCopied === 'bank-routing' ? (
-                          <CheckCircle2 className="size-2.5 text-green-600" />
+                          <CheckCircle2 className="size-2.5 text-success" />
                         ) : (
                           <Copy className="size-2.5" />
                         )}
@@ -529,7 +529,7 @@ export function EnrollmentDialog({ course, userEmail, open, onOpenChange }: Enro
                         className="shrink-0"
                       >
                         {showCopied === 'payment' ? (
-                          <CheckCircle2 className="size-4 text-green-600" />
+                          <CheckCircle2 className="size-4 text-success" />
                         ) : (
                           <Copy className="size-4" />
                         )}
@@ -629,7 +629,7 @@ export function EnrollmentDialog({ course, userEmail, open, onOpenChange }: Enro
             </Field>
 
             {error && (
-              <div className="flex items-center gap-2 text-sm text-red-600 bg-red-50 p-2 rounded-md dark:bg-red-950">
+              <div className="flex items-center gap-2 text-sm text-destructive bg-destructive-soft p-2 rounded-md dark:bg-destructive-soft">
                 <AlertCircle className="size-4 shrink-0" />
                 <span>{error}</span>
               </div>

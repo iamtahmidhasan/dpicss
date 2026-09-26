@@ -146,7 +146,7 @@ export const Courses: CollectionConfig = {
       type: 'select',
       required: true,
       options: [
-        { label: 'Robotics Fundamentals', value: 'robotics-fundamentals' },
+        { label: 'Computing Fundamentals', value: 'robotics-fundamentals' },
         { label: 'Programming & Coding', value: 'programming' },
         { label: 'Electronics & Circuit', value: 'electronics' },
         { label: 'Mechanical Design', value: 'mechanical' },

@@ -125,7 +125,7 @@ export default async function Footer() {
   const socialLinks = settings.socialLinks?.filter((link) => link?.platform && link?.url) || []
 
   return (
-    <footer className="bg-slate-950 text-slate-200">
+    <footer className="bg-surface-inverse text-surface-inverse-foreground">
       <div className="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8">
         <div className="grid gap-10 lg:grid-cols-[minmax(0,2fr)_repeat(3,minmax(0,1fr))]">
           <div className="space-y-6">
@@ -137,23 +137,23 @@ export default async function Footer() {
                   className="h-10 w-auto rounded-md object-contain"
                 />
               ) : (
-                <div className="flex h-10 w-10 items-center justify-center rounded-md bg-slate-800 text-sm font-semibold text-white">
+                <div className="flex h-10 w-10 items-center justify-center rounded-md bg-surface-inverse-accent text-sm font-semibold text-surface-inverse-foreground">
                   {companyName.slice(0, 2).toUpperCase()}
                 </div>
               )}
               <div>
-                <p className="text-lg font-semibold text-white">{companyName}</p>
+                <p className="text-lg font-semibold text-surface-inverse-foreground">{companyName}</p>
               </div>
             </div>
-            <p className="max-w-md text-sm leading-6 text-slate-300">{description}</p>
-            <div className="space-y-2 text-sm text-slate-400">
+            <p className="max-w-md text-sm leading-6 text-surface-inverse-muted">{description}</p>
+            <div className="space-y-2 text-sm text-surface-inverse-muted">
               {settings.officeAddress ? <p>{settings.officeAddress}</p> : null}
               {settings.contactEmail ? (
                 <p>
                   {t(messages, 'footer.email')}{' '}
                   <a
                     href={`mailto:${settings.contactEmail}`}
-                    className="text-slate-200 hover:text-white"
+                    className="text-surface-inverse-foreground hover:text-surface-inverse-foreground"
                   >
                     {settings.contactEmail}
                   </a>
@@ -176,7 +176,7 @@ export default async function Footer() {
                       href={link.url}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="flex h-9 w-9 items-center justify-center rounded-full bg-slate-800 text-slate-400 transition-colors hover:bg-slate-700 hover:text-white"
+                      className="flex h-9 w-9 items-center justify-center rounded-full bg-surface-inverse-accent text-surface-inverse-muted transition-colors hover:bg-surface-inverse-accent-hover hover:text-surface-inverse-foreground"
                       aria-label={icon.label}
                     >
                       <svg viewBox="0 0 24 24" className="h-4 w-4 fill-current">
@@ -191,16 +191,16 @@ export default async function Footer() {
 
           {columns.map((column, columnIndex) => (
             <div key={`${column.title}-${columnIndex}`}>
-              <p className="mb-4 text-sm font-semibold uppercase tracking-wider text-slate-400">
+              <p className="mb-4 text-sm font-semibold uppercase tracking-wider text-surface-inverse-muted">
                 {column.title}
               </p>
-              <ul className="space-y-3 text-sm text-slate-300">
+              <ul className="space-y-3 text-sm text-surface-inverse-muted">
                 {column.links?.map((link, linkIndex) => (
                   <li key={`${link.href}-${linkIndex}`}>
                     {link?.href ? (
                       <Link
                         href={String(link.href)}
-                        className="transition-colors flex items-center gap-2 hover:text-white"
+                        className="transition-colors flex items-center gap-2 hover:text-surface-inverse-foreground"
                       >
                         <ArrowRight className="h-4 w-4" />
                         {link.label || link.href}
@@ -215,9 +215,9 @@ export default async function Footer() {
           ))}
         </div>
 
-        <div className="mt-12 border-t border-slate-800 pt-6 sm:flex sm:items-center sm:justify-between">
-          <div className="flex flex-col items-start space-y-2 text-sm text-slate-500">
-            <p className="text-sm text-slate-500">
+        <div className="mt-12 border-t border-surface-inverse-border pt-6 sm:flex sm:items-center sm:justify-between">
+          <div className="flex flex-col items-start space-y-2 text-sm text-surface-inverse-subtle">
+            <p className="text-sm text-surface-inverse-subtle">
               © 2025 - {new Date().getFullYear()} DPI Computing Society. All rights reserved.
             </p>
             <p>
@@ -227,7 +227,7 @@ export default async function Footer() {
                 href="https://www.tahmidhasan.net"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-slate-300 hover:text-white"
+                className="text-surface-inverse-muted hover:text-surface-inverse-foreground"
               >
                 {' '}
                 Tahmid Hasan
@@ -236,12 +236,12 @@ export default async function Footer() {
             </p>
           </div>
           {legalLinks.length > 0 ? (
-            <div className="mt-4 flex flex-wrap gap-4 text-sm text-slate-300 sm:mt-0">
+            <div className="mt-4 flex flex-wrap gap-4 text-sm text-surface-inverse-muted sm:mt-0">
               {legalLinks.map((link, linkIndex) => (
                 <Link
                   key={`${link.href}-${linkIndex}`}
                   href={String(link.href)}
-                  className="transition-colors hover:text-white"
+                  className="transition-colors hover:text-surface-inverse-foreground"
                 >
                   {link.label || link.href}
                 </Link>

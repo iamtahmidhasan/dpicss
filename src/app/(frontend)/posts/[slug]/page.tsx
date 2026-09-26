@@ -110,7 +110,7 @@ export default async function PostDetailsPage({ params }: PageProps) {
   const postSchema = articleJsonLd({
     urlPath: `/posts/${slug}`,
     title,
-    description: excerpt || 'Robotics article from DPI Computing Society.',
+    description: excerpt || 'Article from DPI Computing Society.',
     image: featuredImage.url || undefined,
     publishedAt: post.publishedAt,
     modifiedAt: post.updatedAt || post.publishedAt,

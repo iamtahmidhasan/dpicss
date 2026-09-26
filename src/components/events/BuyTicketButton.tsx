@@ -75,7 +75,7 @@ export function BuyTicketButton({ event, isRegistered, registrationStatus, isSol
           <Ticket className="mr-2 size-5" />
           Already Registered
         </Button>
-        <p className="text-center text-xs text-green-600 font-medium">
+        <p className="text-center text-xs text-success font-medium">
           {registrationStatus === 'pending' ? 'Registration pending approval' : 'You are registered for this event'}
         </p>
       </>

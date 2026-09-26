@@ -381,8 +381,8 @@ export function OfficialMemberRegistrationForm() {
       <div className="flex items-center justify-center min-h-screen">
         <Card className="max-w-sm">
           <CardContent className="flex flex-col items-center justify-center gap-4 pt-8">
-            <div className="rounded-full bg-green-100 p-3">
-              <CheckCircle2 className="h-8 w-8 text-green-600" />
+            <div className="rounded-full bg-success-muted p-3">
+              <CheckCircle2 className="h-8 w-8 text-success" />
             </div>
             <h2 className="text-2xl font-bold text-center">Registration Complete!</h2>
             <p className="text-center text-muted-foreground">
@@ -439,7 +439,7 @@ export function OfficialMemberRegistrationForm() {
                           onClick={() => copyToClipboard(bkashNum, 'bkash')}
                         >
                           {showCopied === 'bkash' ? (
-                            <CheckCircle2 className="size-3 text-green-600" />
+                            <CheckCircle2 className="size-3 text-success" />
                           ) : (
                             <Copy className="size-3" />
                           )}
@@ -466,7 +466,7 @@ export function OfficialMemberRegistrationForm() {
                           onClick={() => copyToClipboard(nagadNum, 'nagad')}
                         >
                           {showCopied === 'nagad' ? (
-                            <CheckCircle2 className="size-3 text-green-600" />
+                            <CheckCircle2 className="size-3 text-success" />
                           ) : (
                             <Copy className="size-3" />
                           )}
@@ -493,7 +493,7 @@ export function OfficialMemberRegistrationForm() {
                           onClick={() => copyToClipboard(rocketNum, 'rocket')}
                         >
                           {showCopied === 'rocket' ? (
-                            <CheckCircle2 className="size-3 text-green-600" />
+                            <CheckCircle2 className="size-3 text-success" />
                           ) : (
                             <Copy className="size-3" />
                           )}
@@ -544,7 +544,7 @@ export function OfficialMemberRegistrationForm() {
                               }
                             >
                               {showCopied === 'bank-account' ? (
-                                <CheckCircle2 className="size-2.5 text-green-600" />
+                                <CheckCircle2 className="size-2.5 text-success" />
                               ) : (
                                 <Copy className="size-2.5" />
                               )}
@@ -641,24 +641,24 @@ export function OfficialMemberRegistrationForm() {
                               className="shrink-0"
                             >
                               {showCopied === 'payment-number' ? (
-                                <CheckCircle2 className="size-4 text-green-600" />
+                                <CheckCircle2 className="size-4 text-success" />
                               ) : (
                                 <Copy className="size-4" />
                               )}
                             </Button>
                           </div>
                           {form.paymentMethod === 'bkash' && paymentSettings?.bkash?.type && (
-                            <p className="text-xs text-blue-700">
+                            <p className="text-xs text-info-foreground">
                               {t('Type:', 'টাইপ:')} {paymentSettings.bkash.type}
                             </p>
                           )}
                           {form.paymentMethod === 'nagad' && paymentSettings?.nagad?.type && (
-                            <p className="text-xs text-blue-700">
+                            <p className="text-xs text-info-foreground">
                               {t('Type:', 'টাইপ:')} {paymentSettings.nagad.type}
                             </p>
                           )}
                           {form.paymentMethod === 'rocket' && paymentSettings?.rocket?.type && (
-                            <p className="text-xs text-blue-700">
+                            <p className="text-xs text-info-foreground">
                               {t('Type:', 'টাইপ:')} {paymentSettings.rocket.type}
                             </p>
                           )}
@@ -712,7 +712,7 @@ export function OfficialMemberRegistrationForm() {
                         <Field>
                           <FieldLabel htmlFor="senderNumber">
                             {t('Sender Number', 'প্রেরক নম্বর')}
-                            <span className="text-red-500">*</span>
+                            <span className="text-destructive">*</span>
                           </FieldLabel>
                           <Input
                             id="senderNumber"
@@ -736,7 +736,7 @@ export function OfficialMemberRegistrationForm() {
                         <Field>
                           <FieldLabel htmlFor="paymentTransactionId">
                             {t('Transaction ID', 'লেনদেন আইডি')}
-                            <span className="text-red-500">*</span>
+                            <span className="text-destructive">*</span>
                           </FieldLabel>
                           <Input
                             id="paymentTransactionId"
@@ -876,7 +876,7 @@ export function OfficialMemberRegistrationForm() {
                 <Field>
                   <FieldLabel htmlFor="nidOrBirthCertificate" className="flex items-center gap-2">
                     NID or Birth Certificate
-                    <span className="text-red-500">*</span>
+                    <span className="text-destructive">*</span>
                   </FieldLabel>
                   <div className="flex items-center gap-2">
                     <label className="flex flex-1 cursor-pointer items-center justify-center rounded-lg border-2 border-dashed border-input bg-muted/30 p-4 transition-colors hover:bg-muted/50">
@@ -929,7 +929,7 @@ export function OfficialMemberRegistrationForm() {
                 <Field>
                   <FieldLabel htmlFor="passportSizeImage" className="flex items-center gap-2">
                     Passport Size Image (4x6 cm)
-                    <span className="text-red-500">*</span>
+                    <span className="text-destructive">*</span>
                   </FieldLabel>
                   <div className="flex items-center gap-2">
                     <label className="flex flex-1 cursor-pointer items-center justify-center rounded-lg border-2 border-dashed border-input bg-muted/30 p-4 transition-colors hover:bg-muted/50">
@@ -955,14 +955,14 @@ export function OfficialMemberRegistrationForm() {
               </div>
 
               {error && (
-                <Alert className="border-red-200 bg-red-50">
-                  <AlertDescription className="text-red-800">{error}</AlertDescription>
+                <Alert className="border-destructive-border bg-destructive-soft">
+                  <AlertDescription className="text-destructive-foreground">{error}</AlertDescription>
                 </Alert>
               )}
 
               {step === 'uploading' && (
-                <Alert className="border-blue-200 bg-blue-50">
-                  <AlertDescription className="text-blue-800 flex items-center gap-2">
+                <Alert className="border-info-border bg-info-soft">
+                  <AlertDescription className="text-info-foreground flex items-center gap-2">
                     <Spinner className="h-4 w-4" />
                     Uploading documents and saving your information...
                   </AlertDescription>

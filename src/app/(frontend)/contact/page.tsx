@@ -170,8 +170,8 @@ export default async function ContactPage() {
                   rel="noopener noreferrer"
                   className="flex items-center gap-3 text-sm hover:text-primary transition-colors"
                 >
-                  <div className="flex size-10 items-center justify-center rounded-full bg-green-100">
-                    <MessageCircle className="size-5 text-green-600" />
+                  <div className="flex size-10 items-center justify-center rounded-full bg-success-muted">
+                    <MessageCircle className="size-5 text-success" />
                   </div>
                   <div>
                     <p className="font-medium">{contactPageSettings.whatsapp}</p>

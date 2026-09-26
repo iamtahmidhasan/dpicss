@@ -60,7 +60,7 @@ export default function FeaturedProjectsSection({
           </h2>
           <p className="text-lg text-muted-foreground md:text-xl leading-relaxed">
             {localizedField(homeSettings.projectsSection?.subtitle, lang) ||
-              'A showcase of our latest technical achievements and robotic innovations.'}
+              'A showcase of our latest technical achievements and software innovations.'}
           </p>
         </div>
 

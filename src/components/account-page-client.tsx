@@ -377,7 +377,7 @@ export function AccountPageClient({
       {/* Approval banners (match public profile page) */}
       {showPendingBanner && (
         <div className="mb-6">
-          <Alert className="mb-6 border-amber-500/40 bg-amber-500/10">
+          <Alert className="mb-6 border-warning/40 bg-warning/10">
             <AlertTitle>{t(messages, 'profile.awaitingApproval')}</AlertTitle>
             <AlertDescription>{t(messages, 'profile.approvalMessage')}</AlertDescription>
           </Alert>
@@ -445,7 +445,7 @@ export function AccountPageClient({
                   </p>
                   <div className="flex items-center gap-2">
                     {data.user.isActive ? (
-                      <Badge variant="outline" className="text-green-600">
+                      <Badge variant="outline" className="text-success">
                         <CheckCircle className="h-3 w-3 mr-1" />
                         {t(messages, 'profile.active')}
                       </Badge>
@@ -501,7 +501,7 @@ export function AccountPageClient({
               <CardContent className="space-y-4">
                 <div className="flex justify-between items-center p-3 bg-muted/50 rounded-lg">
                   <div className="flex items-center gap-2">
-                    <BookOpen className="h-4 w-4 text-green-500" />
+                    <BookOpen className="h-4 w-4 text-success" />
                     <span className="text-sm text-muted-foreground">
                       {t(messages, 'profile.completedCourses')}
                     </span>
@@ -510,7 +510,7 @@ export function AccountPageClient({
                 </div>
                 <div className="flex justify-between items-center p-3 bg-muted/50 rounded-lg">
                   <div className="flex items-center gap-2">
-                    <Calendar className="h-4 w-4 text-blue-500" />
+                    <Calendar className="h-4 w-4 text-cat-blue" />
                     <span className="text-sm text-muted-foreground">
                       {t(messages, 'profile.enrollments')}
                     </span>
@@ -519,7 +519,7 @@ export function AccountPageClient({
                 </div>
                 <div className="flex justify-between items-center p-3 bg-muted/50 rounded-lg">
                   <div className="flex items-center gap-2">
-                    <Award className="h-4 w-4 text-purple-500" />
+                    <Award className="h-4 w-4 text-cat-violet" />
                     <span className="text-sm text-muted-foreground">
                       {t(messages, 'profile.certificates')}
                     </span>
@@ -560,8 +560,8 @@ export function AccountPageClient({
                     key={enrollment.id}
                     className="flex items-center gap-3 p-3 bg-muted/50 rounded-lg"
                   >
-                    <div className="h-8 w-8 bg-blue-500/10 rounded-full flex items-center justify-center">
-                      <BookOpen className="h-4 w-4 text-blue-600" />
+                    <div className="h-8 w-8 bg-cat-blue/10 rounded-full flex items-center justify-center">
+                      <BookOpen className="h-4 w-4 text-cat-blue" />
                     </div>
                     <div className="flex-1">
                       <p className="text-sm font-medium">
@@ -576,8 +576,8 @@ export function AccountPageClient({
 
                 {activeProfile?.manualCertificates?.length ? (
                   <div className="flex items-center gap-3 p-3 bg-muted/50 rounded-lg">
-                    <div className="h-8 w-8 bg-green-500/10 rounded-full flex items-center justify-center">
-                      <Award className="h-4 w-4 text-green-600" />
+                    <div className="h-8 w-8 bg-success/10 rounded-full flex items-center justify-center">
+                      <Award className="h-4 w-4 text-success" />
                     </div>
                     <div className="flex-1">
                       <p className="text-sm font-medium">
@@ -651,7 +651,7 @@ export function AccountPageClient({
                       </FieldDescription>
                     )}
                     {isAvatarLocked && (
-                      <FieldDescription className={avatarId ? 'text-green-600' : 'text-amber-600'}>
+                      <FieldDescription className={avatarId ? 'text-success' : 'text-warning'}>
                         {avatarId
                           ? 'Image uploaded. Save your profile to apply it.'
                           : 'The one-time profile picture setting is enabled. You cannot upload a new picture after it has been set.'}
@@ -862,7 +862,7 @@ export function AccountPageClient({
 
                   {(message || error) && (
                     <Field>
-                      <FieldDescription className={error ? 'text-red-600' : 'text-green-600'}>
+                      <FieldDescription className={error ? 'text-destructive' : 'text-success'}>
                         {error || message}
                       </FieldDescription>
                     </Field>
@@ -933,8 +933,8 @@ export function AccountPageClient({
                   {courses.map((course: any, index) => (
                     <Card key={index} className="p-4">
                       <div className="flex items-start gap-3">
-                        <div className="h-10 w-10 bg-green-500/10 rounded-lg flex items-center justify-center">
-                          <BookOpen className="h-5 w-5 text-green-600" />
+                        <div className="h-10 w-10 bg-success/10 rounded-lg flex items-center justify-center">
+                          <BookOpen className="h-5 w-5 text-success" />
                         </div>
                         <div className="flex-1 min-w-0">
                           <h3 className="font-medium truncate">
@@ -974,8 +974,8 @@ export function AccountPageClient({
                   {enrollments.map((enrollment: any, index) => (
                     <Card key={index} className="p-4">
                       <div className="flex items-start gap-3">
-                        <div className="h-10 w-10 bg-blue-500/10 rounded-lg flex items-center justify-center">
-                          <Calendar className="h-5 w-5 text-blue-600" />
+                        <div className="h-10 w-10 bg-cat-blue/10 rounded-lg flex items-center justify-center">
+                          <Calendar className="h-5 w-5 text-cat-blue" />
                         </div>
                         <div className="flex-1 min-w-0">
                           <h3 className="font-medium truncate">
@@ -993,7 +993,7 @@ export function AccountPageClient({
                               </div>
                               <div className="w-full bg-muted rounded-full h-2">
                                 <div
-                                  className="bg-blue-600 h-2 rounded-full"
+                                  className="bg-cat-blue h-2 rounded-full"
                                   style={{ width: `${enrollment.progress}%` }}
                                 />
                               </div>
@@ -1044,8 +1044,8 @@ export function AccountPageClient({
                   {activeProfile.manualCertificates.map((cert: any, index: number) => (
                     <Card key={index} className="p-4">
                       <div className="flex items-start gap-3">
-                        <div className="h-10 w-10 bg-purple-500/10 rounded-lg flex items-center justify-center">
-                          <Award className="h-5 w-5 text-purple-600" />
+                        <div className="h-10 w-10 bg-cat-violet/10 rounded-lg flex items-center justify-center">
+                          <Award className="h-5 w-5 text-cat-violet" />
                         </div>
                         <div className="flex-1 min-w-0">
                           <h3 className="font-medium truncate">

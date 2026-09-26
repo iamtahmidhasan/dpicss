@@ -65,7 +65,7 @@ export default function HeroSection({ user, lang, homeSettings, stats, className
             <div>
               <p className="text-xl font-semibold mb-2">Ready to Innovate?</p>
               <p className="text-muted-foreground text-sm">
-                Join the largest student robotics community in the region.
+                Join the largest student computing community in the region.
               </p>
             </div>
             <div className="flex flex-col gap-3">
@@ -100,7 +100,7 @@ export default function HeroSection({ user, lang, homeSettings, stats, className
             <div className="relative aspect-video lg:aspect-auto lg:h-[450px] overflow-hidden rounded-2xl bg-muted lg:col-span-2 group">
               <Image
                 src={HERO_IMAGE_SRC}
-                alt="Robotics Lab"
+                alt="Computing Lab"
                 fill
                 sizes="(min-width: 1024px) 66vw, 100vw"
                 className="object-cover transition-transform duration-700 group-hover:scale-105 active:scale-95"

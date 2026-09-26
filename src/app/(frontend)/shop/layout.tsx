@@ -3,9 +3,9 @@ import { createPageMetadata } from '@/lib/seo'
 
 export const metadata = createPageMetadata({
   title: 'Shop',
-  description: 'Browse DPICS robotics kits, accessories, and learning resources.',
+  description: 'Browse DPICS merchandise, accessories, and learning resources.',
   path: '/shop',
-  keywords: ['robotics shop', 'DPICS merchandise', 'robotics kits'],
+  keywords: ['DPICS shop', 'DPICS merchandise', 'club merch'],
 })
 
 export default function ShopLayout({ children }: { children: ReactNode }) {

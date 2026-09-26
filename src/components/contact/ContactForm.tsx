@@ -157,8 +157,8 @@ export function ContactForm({ messages }: ContactFormProps) {
           </div>
 
           {error && (
-            <div className="rounded-lg bg-red-50 p-3">
-              <div className="flex items-center gap-2 text-sm text-red-700">
+            <div className="rounded-lg bg-destructive-soft p-3">
+              <div className="flex items-center gap-2 text-sm text-destructive-foreground">
                 <AlertCircle className="size-4" />
                 {error}
               </div>
@@ -166,8 +166,8 @@ export function ContactForm({ messages }: ContactFormProps) {
           )}
 
           {success && (
-            <div className="rounded-lg bg-green-50 p-3">
-              <div className="flex items-center gap-2 text-sm text-green-700">
+            <div className="rounded-lg bg-success-soft p-3">
+              <div className="flex items-center gap-2 text-sm text-success-foreground">
                 <Check className="size-4" />
                 {messages.successMessage}
               </div>

@@ -49,7 +49,7 @@ export default function FeaturedEventsSection({
           </h1>
           <p className="text-lg text-muted-foreground md:text-xl">
             {localizedField(homeSettings.eventsSection?.subtitle, lang) ||
-              'Join our elite workshops and robotics competitions.'}
+              'Join our hands-on workshops and tech competitions.'}
           </p>
         </div>
 
