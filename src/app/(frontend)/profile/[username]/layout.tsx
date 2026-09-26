@@ -68,7 +68,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const displayName = [doc.firstName, doc.lastName].filter(Boolean).join(' ').trim() || 'Member'
   const title = `${displayName} (@${doc.username || slug})`
   const description =
-    doc.bio?.trim() || `${displayName}'s public profile on DPI Robotics Club (DPIRC).`
+    doc.bio?.trim() || `${displayName}'s public profile on DPI Computing Society (DPICS).`
   const twitterCreator = toTwitterHandle(doc.username || doc.memberId || slug)
 
   return createPageMetadata({

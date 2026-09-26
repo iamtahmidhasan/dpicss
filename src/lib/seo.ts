@@ -1,10 +1,10 @@
 import type { Metadata } from 'next'
 import type { Viewport } from 'next'
 
-const DEFAULT_SITE_NAME = process.env.NEXT_PUBLIC_SITE_NAME || 'DPI Robotics Club'
+const DEFAULT_SITE_NAME = process.env.NEXT_PUBLIC_SITE_NAME || 'DPI Computing Society'
 const DEFAULT_DESCRIPTION =
   process.env.NEXT_PUBLIC_SITE_DESCRIPTION ||
-  'DPI Robotics Club courses, achievements, members, and robotics resources.'
+  'DPI Computing Society courses, achievements, members, and robotics resources.'
 const DEFAULT_OG_IMAGE = process.env.NEXT_PUBLIC_DEFAULT_OG_IMAGE || '/og-default.jpg'
 const TWITTER_SITE = process.env.NEXT_PUBLIC_TWITTER_SITE || undefined
 const TWITTER_CREATOR = process.env.NEXT_PUBLIC_TWITTER_CREATOR || undefined

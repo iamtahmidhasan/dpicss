@@ -34,8 +34,8 @@ type EventCard = {
 }
 
 export const metadata: Metadata = {
-  title: 'Events | DPI Robotics Club',
-  description: 'Upcoming events, workshops, and meetups from DPI Robotics Club.',
+  title: 'Events | DPI Computing Society',
+  description: 'Upcoming events, workshops, and meetups from DPI Computing Society.',
 }
 
 function formatEventDate(

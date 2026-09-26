@@ -13,7 +13,7 @@ export const AchievementsSettings: GlobalConfig = {
   },
   fields: [
     { name: 'title', type: 'text', localized: true, defaultValue: 'Achievements' },
-    { name: 'subtitle', type: 'textarea', localized: true, defaultValue: 'Milestones, awards, and competition highlights from DPI Robotics Club.' },
+    { name: 'subtitle', type: 'textarea', localized: true, defaultValue: 'Milestones, awards, and competition highlights from DPI Computing Society.' },
     { name: 'empty', type: 'textarea', localized: true, defaultValue: 'No achievements published yet.' },
     { name: 'untitled', type: 'text', localized: true, defaultValue: 'Untitled Achievement' },
     { name: 'featured', type: 'text', localized: true, defaultValue: 'Featured' },

@@ -3,9 +3,9 @@ import { createPageMetadata } from '@/lib/seo'
 
 export const metadata = createPageMetadata({
   title: 'Achievements',
-  description: 'Discover competition wins, project milestones, and success stories from DPIRC.',
+  description: 'Discover competition wins, project milestones, and success stories from DPICS.',
   path: '/achievements',
-  keywords: ['robotics achievements', 'DPIRC awards', 'competition wins'],
+  keywords: ['robotics achievements', 'DPICS awards', 'competition wins'],
 })
 
 export default function AchievementsLayout({ children }: { children: ReactNode }) {

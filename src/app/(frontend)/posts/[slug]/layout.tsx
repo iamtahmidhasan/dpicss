@@ -56,10 +56,10 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const description =
     doc.seo?.metaDescription ||
     pickLocalizedString(doc.excerpt, locale) ||
-    'Read this robotics article from DPI Robotics Club.'
+    'Read this robotics article from DPI Computing Society.'
 
   const siteSettings = (await (payload as any).findGlobal({ slug: 'site-settings' })) as { posts?: { authorName?: string } }
-  const author = siteSettings.posts?.authorName || 'DPIRC Team'
+  const author = siteSettings.posts?.authorName || 'DPICS Team'
 
   const imageUrl =
     doc.featuredImage && typeof doc.featuredImage === 'object' ? doc.featuredImage.url : undefined

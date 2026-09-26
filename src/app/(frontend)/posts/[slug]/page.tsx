@@ -104,13 +104,13 @@ export default async function PostDetailsPage({ params }: PageProps) {
   const featuredImage = getMediaProps(post.featuredImage)
 
   const siteSettings = (await (payload as any).findGlobal({ slug: 'site-settings' })) as SiteSettingsDoc
-  const authorName = siteSettings.posts?.authorName || 'DPIRC Team'
+  const authorName = siteSettings.posts?.authorName || 'DPICS Team'
   const authorImage = getMediaProps(siteSettings.posts?.authorImage)
 
   const postSchema = articleJsonLd({
     urlPath: `/posts/${slug}`,
     title,
-    description: excerpt || 'Robotics article from DPI Robotics Club.',
+    description: excerpt || 'Robotics article from DPI Computing Society.',
     image: featuredImage.url || undefined,
     publishedAt: post.publishedAt,
     modifiedAt: post.updatedAt || post.publishedAt,

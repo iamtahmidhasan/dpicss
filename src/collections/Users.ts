@@ -115,7 +115,7 @@ export const Users: CollectionConfig = {
         update: adminOnlyField,
       },
       admin: {
-        description: 'Linked profile for official DPIRC members',
+        description: 'Linked profile for official DPICS members',
       },
     },
     {

@@ -150,7 +150,7 @@ export default async function Header() {
   const languages = settings.languages?.filter((lng) => lng?.label) || [
     { label: 'English', code: 'en' },
   ]
-  const siteTitle = pickLocalizedString(settings.siteTitle as unknown, locale) || 'DPIRC'
+  const siteTitle = pickLocalizedString(settings.siteTitle as unknown, locale) || 'DPICS'
   const logoURL =
     settings.logo && typeof settings.logo === 'object' ? String(settings.logo.url || '') : ''
   const siteTagline = 'Where Technology Meets Creativity'

@@ -154,8 +154,8 @@ export async function sendMemberWelcomeEmail(to: string, firstName: string): Pro
     await transporter.sendMail({
       from,
       to,
-      subject: 'Welcome to DPI Robotics Club — your official profile is approved',
-      text: `Hi ${name},\n\nYour official member profile has been approved and is now listed in the member directory.\n\nVisit: ${appUrl}/members\n\nCreate your shareable poster: ${appUrl}/account?tab=poster\n\n— DPI Robotics Club`,
+      subject: 'Welcome to DPI Computing Society — your official profile is approved',
+      text: `Hi ${name},\n\nYour official member profile has been approved and is now listed in the member directory.\n\nVisit: ${appUrl}/members\n\nCreate your shareable poster: ${appUrl}/account?tab=poster\n\n— DPI Computing Society`,
       html: `
         <div style="font-family:Arial,sans-serif;line-height:1.5;max-width:600px">
           <h2 style="margin:0 0 16px">Hi ${name}!</h2>
@@ -165,12 +165,12 @@ export async function sendMemberWelcomeEmail(to: string, firstName: string): Pro
           </p>
           <div style="margin:20px 0;padding:16px;background:#f0fdf4;border-radius:8px;border-left:4px solid #22c55e">
             <p style="margin:0 0 8px;font-weight:bold">🎉 Share Your Achievement</p>
-            <p style="margin:0;font-size:14px">Create your personalised shareable poster and let everyone know you're part of DPI Robotics Club.</p>
+            <p style="margin:0;font-size:14px">Create your personalised shareable poster and let everyone know you're part of DPI Computing Society.</p>
             <p style="margin:8px 0 0">
               <a href="${appUrl}/account?tab=poster" style="color:#2563eb;text-decoration:none;font-weight:bold">Create Your Poster →</a>
             </p>
           </div>
-          <p style="margin:0;color:#6b7280">— DPI Robotics Club</p>
+          <p style="margin:0;color:#6b7280">— DPI Computing Society</p>
         </div>
       `.trim(),
     })
@@ -206,7 +206,7 @@ export async function sendAnnouncementEmail({
   }
 
   const safeSummary = summary?.trim() || ''
-  const text = `${title}\n\n${safeSummary}\n\nRead the announcement: ${actionUrl}\n\n— DPI Robotics Club`
+  const text = `${title}\n\n${safeSummary}\n\nRead the announcement: ${actionUrl}\n\n— DPI Computing Society`
   const html = `
     <div style="font-family:Arial,sans-serif;line-height:1.5">
       <h2 style="margin:0 0 12px">${title}</h2>
@@ -214,7 +214,7 @@ export async function sendAnnouncementEmail({
       <p style="margin:0 0 16px">
         <a href="${actionUrl}" style="color:#2563eb;text-decoration:none">Read the announcement</a>
       </p>
-      <p style="margin:0;color:#6b7280">— DPI Robotics Club</p>
+      <p style="margin:0;color:#6b7280">— DPI Computing Society</p>
     </div>
   `.trim()
 
@@ -283,7 +283,7 @@ export async function sendComplaintReceivedEmail({
       from,
       to,
       subject: 'We received your complaint',
-      text: `Hi ${safeName},\n\nWe received your complaint and our team will review it shortly.\n\nYour message:\n${safeMessage}\n\nYou can visit your account for updates: ${appUrl}/account?tab=complaints\n\n— DPI Robotics Club`,
+      text: `Hi ${safeName},\n\nWe received your complaint and our team will review it shortly.\n\nYour message:\n${safeMessage}\n\nYou can visit your account for updates: ${appUrl}/account?tab=complaints\n\n— DPI Computing Society`,
       html: `
         <div style="font-family:Arial,sans-serif;line-height:1.5">
           <p>Hi ${safeName},</p>
@@ -294,7 +294,7 @@ export async function sendComplaintReceivedEmail({
           <p>
             View status in your account: <a href="${appUrl}/account?tab=complaints">${appUrl}/account</a>
           </p>
-          <p style="color:#6b7280">— DPI Robotics Club</p>
+          <p style="color:#6b7280">— DPI Computing Society</p>
         </div>
       `.trim(),
     })
@@ -360,7 +360,7 @@ export async function sendContactEmail({
             <p style="margin:0;font-weight:bold">Message:</p>
             <p style="margin:8px 0 0;white-space:pre-wrap">${safeMessage}</p>
           </div>
-          <p style="margin-top:16px;color:#6b7280">— DPI Robotics Club Contact Form</p>
+          <p style="margin-top:16px;color:#6b7280">— DPI Computing Society Contact Form</p>
         </div>
       `.trim(),
     })
@@ -393,13 +393,13 @@ export async function sendContactConfirmationEmail({
       from,
       to,
       subject: 'We received your message',
-      text: `Hi ${safeName},\n\nWe received your message regarding "${subject}". Our team will review it and get back to you soon.\n\nThank you for reaching out!\n\n— DPI Robotics Club`,
+      text: `Hi ${safeName},\n\nWe received your message regarding "${subject}". Our team will review it and get back to you soon.\n\nThank you for reaching out!\n\n— DPI Computing Society`,
       html: `
         <div style="font-family:Arial,sans-serif;line-height:1.5;max-width:600px">
           <h2 style="margin:0 0 16px">Hi ${safeName}!</h2>
           <p style="margin:0 0 12px">We received your message regarding <strong>"${subject}"</strong>. Our team will review it and get back to you soon.</p>
           <p style="margin:0">Thank you for reaching out!</p>
-          <p style="margin-top:16px;color:#6b7280">— DPI Robotics Club</p>
+          <p style="margin-top:16px;color:#6b7280">— DPI Computing Society</p>
         </div>
       `.trim(),
     })
@@ -435,16 +435,16 @@ export async function sendContactReplyEmail({
       from,
       to,
       subject: `Re: ${safeOriginalSubject}`,
-      text: `Hi ${safeName},\n\nThank you for contacting DPI Robotics Club. Here is our reply:\n\n${safeReply}\n\nIf you have any more questions, please don't hesitate to reach out.\n\nBest regards,\nDPI Robotics Club Team`,
+      text: `Hi ${safeName},\n\nThank you for contacting DPI Computing Society. Here is our reply:\n\n${safeReply}\n\nIf you have any more questions, please don't hesitate to reach out.\n\nBest regards,\nDPI Computing Society Team`,
       html: `
         <div style="font-family:Arial,sans-serif;line-height:1.5;max-width:600px">
           <h2 style="margin:0 0 16px">Hi ${safeName}!</h2>
-          <p style="margin:0 0 12px">Thank you for contacting DPI Robotics Club. Here is our reply:</p>
+          <p style="margin:0 0 12px">Thank you for contacting DPI Computing Society. Here is our reply:</p>
           <div style="margin:16px 0;padding:16px;background:#f9fafb;border-radius:8px;border-left:4px solid #2563eb">
             <p style="margin:0;white-space:pre-wrap">${safeReply}</p>
           </div>
           <p style="margin:0 0 12px">If you have any more questions, please don't hesitate to reach out.</p>
-          <p style="margin:0;color:#6b7280">Best regards,<br>DPI Robotics Club Team</p>
+          <p style="margin:0;color:#6b7280">Best regards,<br>DPI Computing Society Team</p>
         </div>
       `.trim(),
     })
@@ -475,7 +475,7 @@ export async function sendEnrollmentApprovedEmail({
       from,
       to,
       subject: `You're enrolled in ${courseTitle}!`,
-      text: `Congratulations! Your enrollment request for "${courseTitle}" has been approved.\n\nYou can now access the course content and start learning.\n\nVisit your courses: ${courseUrl}\n\nHappy learning!\n— DPI Robotics Club`,
+      text: `Congratulations! Your enrollment request for "${courseTitle}" has been approved.\n\nYou can now access the course content and start learning.\n\nVisit your courses: ${courseUrl}\n\nHappy learning!\n— DPI Computing Society`,
       html: `
         <div style="font-family:Arial,sans-serif;line-height:1.5;max-width:600px">
           <h2 style="margin:0 0 16px">🎉 You're enrolled!</h2>
@@ -484,7 +484,7 @@ export async function sendEnrollmentApprovedEmail({
           <p style="margin:0 0 16px">
             <a href="${courseUrl}" style="display:inline-block;background:#2563eb;color:#fff;padding:12px 24px;border-radius:6px;text-decoration:none;font-weight:bold">Start Learning</a>
           </p>
-          <p style="margin:0;color:#6b7280">Happy learning!<br>— DPI Robotics Club Team</p>
+          <p style="margin:0;color:#6b7280">Happy learning!<br>— DPI Computing Society Team</p>
         </div>
       `.trim(),
     })
@@ -520,7 +520,7 @@ export async function sendEnrollmentRequestSubmittedEmail({
       from,
       to,
       subject: `Enrollment request received for ${courseTitle}`,
-      text: `Hi ${safeName},\n\nWe received your enrollment request for "${courseTitle}".\n\nYour request is currently under review and will be processed within 24-48 hours.\n\nYou will receive an email notification once your enrollment is approved.\n\nTrack your enrollments: ${appUrl}/account\n\n— DPI Robotics Club`,
+      text: `Hi ${safeName},\n\nWe received your enrollment request for "${courseTitle}".\n\nYour request is currently under review and will be processed within 24-48 hours.\n\nYou will receive an email notification once your enrollment is approved.\n\nTrack your enrollments: ${appUrl}/account\n\n— DPI Computing Society`,
       html: `
         <div style="font-family:Arial,sans-serif;line-height:1.5;max-width:600px">
           <h2 style="margin:0 0 16px">Hi ${safeName}!</h2>
@@ -537,7 +537,7 @@ export async function sendEnrollmentRequestSubmittedEmail({
           <p style="margin:0 0 16px">
             <a href="${appUrl}/account" style="display:inline-block;background:#2563eb;color:#fff;padding:12px 24px;border-radius:6px;text-decoration:none;font-weight:bold">View My Enrollments</a>
           </p>
-          <p style="margin:0;color:#6b7280">— DPI Robotics Club Team</p>
+          <p style="margin:0;color:#6b7280">— DPI Computing Society Team</p>
         </div>
       `.trim(),
     })
@@ -622,7 +622,7 @@ export async function sendEnrollmentStatusUpdateEmail({
       from,
       to,
       subject: config.subject,
-      text: `Hi ${safeName},\n\n${config.message}\n\nCourse: ${courseTitle}\n${adminNotes ? `\nAdmin notes: ${adminNotes}` : ''}\n\n${newStatus === 'active' ? `Start learning: ${appUrl}/courses` : `View your enrollments: ${appUrl}/account`}\n\n— DPI Robotics Club`,
+      text: `Hi ${safeName},\n\n${config.message}\n\nCourse: ${courseTitle}\n${adminNotes ? `\nAdmin notes: ${adminNotes}` : ''}\n\n${newStatus === 'active' ? `Start learning: ${appUrl}/courses` : `View your enrollments: ${appUrl}/account`}\n\n— DPI Computing Society`,
       html: `
         <div style="font-family:Arial,sans-serif;line-height:1.5;max-width:600px">
           <h2 style="margin:0 0 16px">${config.emoji} Hi ${safeName}!</h2>
@@ -635,7 +635,7 @@ export async function sendEnrollmentStatusUpdateEmail({
           <p style="margin:0 0 16px">
             <a href="${newStatus === 'active' ? `${appUrl}/courses` : `${appUrl}/account`}" style="display:inline-block;background:#2563eb;color:#fff;padding:12px 24px;border-radius:6px;text-decoration:none;font-weight:bold">${newStatus === 'active' ? 'Start Learning' : 'View Enrollments'}</a>
           </p>
-          <p style="margin:0;color:#6b7280">— DPI Robotics Club Team</p>
+          <p style="margin:0;color:#6b7280">— DPI Computing Society Team</p>
         </div>
       `.trim(),
     })

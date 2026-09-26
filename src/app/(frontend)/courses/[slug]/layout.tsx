@@ -53,7 +53,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const description =
     doc.seo?.metaDescription ||
     pickLocalizedString(doc.shortDescription, locale) ||
-    'Explore this robotics course from DPI Robotics Club.'
+    'Explore this robotics course from DPI Computing Society.'
 
   const imageUrl =
     doc.thumbnail && typeof doc.thumbnail === 'object' ? doc.thumbnail.url : undefined

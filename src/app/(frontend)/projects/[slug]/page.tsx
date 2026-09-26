@@ -68,7 +68,7 @@ export async function generateMetadata({
   })
 
   if (result.docs.length === 0) {
-    return { title: 'Project Not Found | DPI Robotics Club' }
+    return { title: 'Project Not Found | DPI Computing Society' }
   }
 
   const project = result.docs[0] as ProjectDetail
@@ -77,7 +77,7 @@ export async function generateMetadata({
   const thumbnailUrl = projectThumbnail(project)
 
   return {
-    title: project.meta?.metaTitle || `${title} | DPI Robotics Club`,
+    title: project.meta?.metaTitle || `${title} | DPI Computing Society`,
     description: project.meta?.metaDescription || shortDesc || undefined,
     keywords: project.meta?.metaKeywords
       ? project.meta.metaKeywords.split(',').map((k) => k.trim())

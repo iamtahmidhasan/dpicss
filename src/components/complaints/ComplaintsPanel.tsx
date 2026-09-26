@@ -140,7 +140,7 @@ export function ComplaintsPanel({
           Complaints
         </CardTitle>
         <CardDescription>
-          Share issues or concerns. Your complaint will be reviewed by the DPIRC team.
+          Share issues or concerns. Your complaint will be reviewed by the DPICS team.
         </CardDescription>
       </CardHeader>
       <CardContent className="space-y-6">

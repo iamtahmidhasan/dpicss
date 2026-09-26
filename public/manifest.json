@@ -1,7 +1,7 @@
 {
-  "name": "DPI Robotics Club",
-  "short_name": "DPIRC",
-  "description": "Official website of DPI Robotics Club - courses, achievements, events, and community",
+  "name": "DPI Computing Society",
+  "short_name": "DPICS",
+  "description": "Official website of DPI Computing Society - courses, achievements, events, and community",
   "start_url": "/",
   "display": "standalone",
   "background_color": "#ffffff",

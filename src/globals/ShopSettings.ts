@@ -13,7 +13,7 @@ export const ShopSettings: GlobalConfig = {
   },
   fields: [
     { name: 'title', type: 'text', localized: true, defaultValue: 'Shop' },
-    { name: 'subtitle', type: 'textarea', localized: true, defaultValue: 'DPI Robotics Club gear and kits order through WhatsApp.' },
+    { name: 'subtitle', type: 'textarea', localized: true, defaultValue: 'DPI Computing Society gear and kits order through WhatsApp.' },
     { name: 'sortLatest', type: 'text', localized: true, defaultValue: 'Latest' },
     { name: 'sortFeatured', type: 'text', localized: true, defaultValue: 'Featured first' },
     { name: 'empty', type: 'textarea', localized: true, defaultValue: 'No products yet. Please check back soon.' },

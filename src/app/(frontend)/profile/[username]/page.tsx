@@ -187,7 +187,7 @@ export default async function PublicProfilePage({ params }: Args) {
   const displayName = [member.firstName, member.lastName].filter(Boolean).join(' ').trim()
   const profileSchema = personJsonLd({
     urlPath: `/profile/${username}`,
-    name: displayName || member.username || member.memberId || 'DPIRC Member',
+    name: displayName || member.username || member.memberId || 'DPICS Member',
     description: member.bio || undefined,
     image: avatarUrl || undefined,
   })
@@ -573,7 +573,7 @@ export default async function PublicProfilePage({ params }: Args) {
                     <User className="h-4 w-4 text-primary" />
                   </div>
                   <div className="flex-1">
-                    <p className="text-sm font-medium">{t(messages, 'profile.joinedDpirc')}</p>
+                    <p className="text-sm font-medium">{t(messages, 'profile.joinedDpics')}</p>
                     <p className="text-xs text-muted-foreground">
                       {member.createdAt ? new Date(member.createdAt).toLocaleDateString() : '—'}
                     </p>

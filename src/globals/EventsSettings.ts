@@ -13,7 +13,7 @@ export const EventsSettings: GlobalConfig = {
   },
   fields: [
     { name: 'title', type: 'text', localized: true, defaultValue: 'Events' },
-    { name: 'subtitle', type: 'textarea', localized: true, defaultValue: 'Upcoming events, workshops, and meetups from DPI Robotics Club.' },
+    { name: 'subtitle', type: 'textarea', localized: true, defaultValue: 'Upcoming events, workshops, and meetups from DPI Computing Society.' },
     { name: 'empty', type: 'textarea', localized: true, defaultValue: 'No events published yet.' },
     { name: 'emptyDescription', type: 'textarea', localized: true, defaultValue: 'Please check back soon for event updates.' },
     { name: 'backToEvents', type: 'text', localized: true, defaultValue: 'Back to all events' },

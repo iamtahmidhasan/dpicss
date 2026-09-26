@@ -23,7 +23,7 @@ export const MembersSettings: GlobalConfig = {
       type: 'textarea',
       localized: true,
       defaultValue:
-        'Meet our active DPIRC community members. Click on any member to view their profile.',
+        'Meet our active DPICS community members. Click on any member to view their profile.',
     },
   ],
 }

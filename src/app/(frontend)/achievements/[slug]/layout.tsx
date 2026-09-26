@@ -49,11 +49,11 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   }
 
   const doc = found.docs[0] as AchievementSeoDoc
-  const title = doc.seo?.metaTitle || pickLocalizedString(doc.title, locale) || 'DPIRC Achievement'
+  const title = doc.seo?.metaTitle || pickLocalizedString(doc.title, locale) || 'DPICS Achievement'
   const description =
     doc.seo?.metaDescription ||
     pickLocalizedString(doc.summary, locale) ||
-    'Discover this achievement from DPI Robotics Club.'
+    'Discover this achievement from DPI Computing Society.'
 
   const imageUrl =
     doc.coverImage && typeof doc.coverImage === 'object' ? doc.coverImage.url : undefined

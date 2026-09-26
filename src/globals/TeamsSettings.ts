@@ -13,7 +13,7 @@ export const TeamsSettings: GlobalConfig = {
   },
   fields: [
     { name: 'title', type: 'text', localized: true, defaultValue: 'Teams' },
-    { name: 'subtitle', type: 'textarea', localized: true, defaultValue: 'Meet the teams behind DPI Robotics Club innovations and projects.' },
+    { name: 'subtitle', type: 'textarea', localized: true, defaultValue: 'Meet the teams behind DPI Computing Society innovations and projects.' },
     { name: 'empty', type: 'textarea', localized: true, defaultValue: 'No teams published yet.' },
     { name: 'emptyDescription', type: 'textarea', localized: true, defaultValue: 'Please check back soon for team updates.' },
     { name: 'backToTeams', type: 'text', localized: true, defaultValue: 'Back to all teams' },

@@ -418,7 +418,7 @@ export default function RegisterPage() {
                 <path d="M12 21c0-1-1-3-3-3s-3 2-3 3 1 3 3 3 3-2 3-3" />
               </svg>
             </div>
-            DPI Robotics Club
+            DPI Computing Society
           </a>
           <Card>
             <CardHeader className="text-center">
@@ -486,7 +486,7 @@ export default function RegisterPage() {
                 <path d="M12 21c0-1-1-3-3-3s-3 2-3 3 1 3 3 3 3-2 3-3" />
               </svg>
             </div>
-            DPI Robotics Club
+            DPI Computing Society
           </a>
           <Card>
             <CardHeader className="text-center">
@@ -506,7 +506,7 @@ export default function RegisterPage() {
                     <>
                       {availableMemberTypes.length > 1 && (
                         <Field>
-                          <FieldLabel>Are you an official member of DPIRC?</FieldLabel>
+                          <FieldLabel>Are you an official member of DPICS?</FieldLabel>
                           <div className="grid grid-cols-2 gap-2">
                             <Button
                               type="button"

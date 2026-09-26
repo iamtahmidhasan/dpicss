@@ -37,7 +37,7 @@ export const RegistrationSettings: GlobalConfig = {
       defaultValue: true,
       label: 'Allow Official Member Registration',
       admin: {
-        description: 'When enabled, users can register as official DPIRC members.',
+        description: 'When enabled, users can register as official DPICS members.',
       },
     },
     {

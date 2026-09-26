@@ -87,7 +87,7 @@ export const HeaderSettings: GlobalConfig = {
     {
       name: 'siteTitle',
       type: 'text',
-      defaultValue: 'DPIRC',
+      defaultValue: 'DPICS',
       required: true,
       localized: true,
     },

@@ -70,10 +70,10 @@ type EventDetail = {
 }
 
 function formatOrganizerName(org?: Organizer): string {
-  if (!org) return 'DPIRC'
+  if (!org) return 'DPICS'
   const first = org.firstName || ''
   const last = org.lastName || ''
-  return `${first} ${last}`.trim() || 'DPIRC'
+  return `${first} ${last}`.trim() || 'DPICS'
 }
 
 function getInitials(org?: Organizer): string {
@@ -102,7 +102,7 @@ export async function generateMetadata({
   })
 
   if (result.docs.length === 0) {
-    return { title: 'Event Not Found | DPI Robotics Club' }
+    return { title: 'Event Not Found | DPI Computing Society' }
   }
 
   const event = result.docs[0] as EventDetail
@@ -115,7 +115,7 @@ export async function generateMetadata({
       : undefined
 
   return {
-    title: event.meta?.metaTitle || `${name} | DPI Robotics Club`,
+    title: event.meta?.metaTitle || `${name} | DPI Computing Society`,
     description: event.meta?.metaDescription || tagline || undefined,
     keywords: event.meta?.metaKeywords
       ? event.meta.metaKeywords.split(',').map((k) => k.trim())

@@ -3,7 +3,7 @@ import config from '../src/payload.config.js'
 import 'dotenv/config'
 
 /**
- * Simple seeding script for DPI Robotics Club LMS
+ * Simple seeding script for DPI Computing Society LMS
  */
 async function seedDatabase(): Promise<void> {
   const payload = await getPayload({ config })

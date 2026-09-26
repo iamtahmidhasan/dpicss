@@ -61,7 +61,7 @@ export function AddToHomeScreenDrawer() {
                 <Smartphone className="h-5 w-5 text-primary" />
               </div>
               <div>
-                <SheetTitle className="text-base">Install DPI Robotics Club</SheetTitle>
+                <SheetTitle className="text-base">Install DPI Computing Society</SheetTitle>
                 <SheetDescription className="text-xs">
                   Add to your home screen for the best experience
                 </SheetDescription>

@@ -111,7 +111,7 @@ export async function generateMetadata({
   })
 
   if (result.docs.length === 0) {
-    return { title: 'Team Not Found | DPI Robotics Club' }
+    return { title: 'Team Not Found | DPI Computing Society' }
   }
 
   const team = result.docs[0] as TeamDetail
@@ -124,7 +124,7 @@ export async function generateMetadata({
       : undefined
 
   return {
-    title: team.meta?.metaTitle || `${name} | DPI Robotics Club`,
+    title: team.meta?.metaTitle || `${name} | DPI Computing Society`,
     description: team.meta?.metaDescription || tagline || undefined,
     keywords: team.meta?.metaKeywords
       ? team.meta.metaKeywords.split(',').map((k) => k.trim())

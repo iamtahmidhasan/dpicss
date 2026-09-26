@@ -42,8 +42,8 @@ type TeamCard = {
 }
 
 export const metadata: Metadata = {
-  title: 'Teams | DPI Robotics Club',
-  description: 'Meet the teams behind DPI Robotics Club innovations and projects',
+  title: 'Teams | DPI Computing Society',
+  description: 'Meet the teams behind DPI Computing Society innovations and projects',
 }
 
 function formatMemberName(member: Member): string {

@@ -13,7 +13,7 @@ export const ContactPageSettings: GlobalConfig = {
   },
   fields: [
     { name: 'title', type: 'text', localized: true, defaultValue: 'Contact Us' },
-    { name: 'subtitle', type: 'textarea', localized: true, defaultValue: "Get in touch with DPI Robotics Club | we'd love to hear from you." },
+    { name: 'subtitle', type: 'textarea', localized: true, defaultValue: "Get in touch with DPI Computing Society | we'd love to hear from you." },
     {
       name: 'form',
       type: 'group',
@@ -63,7 +63,7 @@ export const ContactPageSettings: GlobalConfig = {
       label: 'Map Section',
       fields: [
         { name: 'title', type: 'text', localized: true, defaultValue: 'Find Us' },
-        { name: 'embedAlt', type: 'text', localized: true, defaultValue: 'Map showing DPIRC location' },
+        { name: 'embedAlt', type: 'text', localized: true, defaultValue: 'Map showing DPICS location' },
         { name: 'openInMaps', type: 'text', localized: true, defaultValue: 'Open in Google Maps' },
         { name: 'ourLocation', type: 'text', localized: true, defaultValue: 'Our Location' },
       ],
@@ -80,7 +80,7 @@ export const ContactPageSettings: GlobalConfig = {
         { name: 'a2', type: 'textarea', localized: true, defaultValue: 'We typically hold workshops and events during afternoons and weekends. Check our events page for specific timings.' },
         { name: 'q3', type: 'text', localized: true, defaultValue: 'Can I volunteer at your events?' },
         { name: 'a3', type: 'textarea', localized: true, defaultValue: 'Yes! We always welcome volunteers. Reach out via this form or catch us at an event.' },
-        { name: 'q4', type: 'text', localized: true, defaultValue: 'How can I collaborate with DPIRC?' },
+        { name: 'q4', type: 'text', localized: true, defaultValue: 'How can I collaborate with DPICS?' },
         { name: 'a4', type: 'textarea', localized: true, defaultValue: "We're open to collaborations with other clubs, companies, and institutions. Contact us to discuss possibilities." },
       ],
     },

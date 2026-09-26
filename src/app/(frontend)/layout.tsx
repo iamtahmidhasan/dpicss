@@ -17,9 +17,9 @@ import Script from 'next/script'
 
 export const metadata: ReturnType<typeof createPageMetadata> & Metadata = {
   ...createPageMetadata({
-    description: 'Official website of DPI Robotics Club with courses, achievements, and community.',
+    description: 'Official website of DPI Computing Society with courses, achievements, and community.',
     path: '/',
-    keywords: ['DPIRC', 'DPI Robotics Club', 'robotics', 'courses', 'Bangladesh'],
+    keywords: ['DPICS', 'DPI Computing Society', 'robotics', 'courses', 'Bangladesh'],
   }),
   ...createPWAMetadata(),
 }

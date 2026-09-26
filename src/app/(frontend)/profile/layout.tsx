@@ -3,7 +3,7 @@ import { createPageMetadata } from '@/lib/seo'
 
 export const metadata = createPageMetadata({
   title: 'Profile',
-  description: 'DPIRC member profile and activity overview.',
+  description: 'DPICS member profile and activity overview.',
   path: '/profile',
   noIndex: true,
 })

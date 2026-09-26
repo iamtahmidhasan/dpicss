@@ -120,7 +120,7 @@ export function AnnouncementsTab({
     <Card>
       <CardHeader>
         <CardTitle>Announcements</CardTitle>
-        <CardDescription>Latest updates from DPIRC</CardDescription>
+        <CardDescription>Latest updates from DPICS</CardDescription>
       </CardHeader>
       <CardContent className="space-y-4">
         {announcements.length === 0 ? (

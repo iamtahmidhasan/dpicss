@@ -12,9 +12,9 @@ export const AboutSettings: GlobalConfig = {
     update: adminOnly,
   },
   fields: [
-    { name: 'badge', type: 'text', localized: true, defaultValue: 'About DPI Robotics Club' },
+    { name: 'badge', type: 'text', localized: true, defaultValue: 'About DPI Computing Society' },
     { name: 'title', type: 'text', localized: true, defaultValue: 'Building Future Innovators Through Robotics & Technology' },
-    { name: 'description', type: 'textarea', localized: true, defaultValue: 'Dhaka Polytechnic Institute Robotics Club (DPIRC) is a student-led organization dedicated to fostering innovation, creativity, and technical excellence in robotics and related technologies.' },
+    { name: 'description', type: 'textarea', localized: true, defaultValue: 'Dhaka Polytechnic Institute Computing Society (DPICS) is a student-led organization dedicated to fostering innovation, creativity, and technical excellence in robotics and related technologies.' },
     {
       name: 'innovation',
       type: 'group',
@@ -57,7 +57,7 @@ export const AboutSettings: GlobalConfig = {
         { name: 'badge', type: 'text', localized: true, defaultValue: 'Our Vision' },
         { name: 'title', type: 'text', localized: true, defaultValue: 'Inspiring The Next Generation Of Innovators' },
         { name: 'description', type: 'textarea', localized: true, defaultValue: 'We envision creating a generation of technology-driven leaders and innovators who will contribute to the advancement of robotics and engineering in Bangladesh and beyond.' },
-        { name: 'description2', type: 'textarea', localized: true, defaultValue: 'DPI Robotics Club strives to inspire students to think beyond textbooks and turn their imagination into real-world applications.' },
+        { name: 'description2', type: 'textarea', localized: true, defaultValue: 'DPI Computing Society strives to inspire students to think beyond textbooks and turn their imagination into real-world applications.' },
         { name: 'description2Title', type: 'text', localized: true, defaultValue: 'A Future Built Together' },
       ],
     },
@@ -77,8 +77,8 @@ export const AboutSettings: GlobalConfig = {
       label: 'Governing Body / Founder Section',
       fields: [
         { name: 'badge', type: 'text', localized: true, defaultValue: 'Governing Body' },
-        { name: 'title', type: 'text', localized: true, defaultValue: 'DPI Robotics Club Governing body' },
-        { name: 'description', type: 'textarea', localized: true, defaultValue: 'The Founder Team of DPI Robotics Club laid the foundation of innovation, leadership, and technical excellence at Dhaka Polytechnic Institute.' },
+        { name: 'title', type: 'text', localized: true, defaultValue: 'DPI Computing Society Governing Body' },
+        { name: 'description', type: 'textarea', localized: true, defaultValue: 'The Founder Team of DPI Computing Society laid the foundation of innovation, leadership, and technical excellence at Dhaka Polytechnic Institute.' },
       ],
     },
     {
@@ -95,7 +95,7 @@ export const AboutSettings: GlobalConfig = {
       fields: [
         { name: 'title', type: 'text', localized: true, defaultValue: 'Leadership & Growth' },
         { name: 'description', type: 'textarea', localized: true, defaultValue: 'Their dedication, hard work, and forward-thinking mindset shaped the club\'s culture of creativity, collaboration, and continuous learning.' },
-        { name: 'description2', type: 'textarea', localized: true, defaultValue: 'Today, DPI Robotics Club stands as a recognized hub for robotics education, project development, and competitive success.' },
+        { name: 'description2', type: 'textarea', localized: true, defaultValue: 'Today, DPI Computing Society stands as a recognized hub for robotics education, project development, and competitive success.' },
       ],
     },
     {

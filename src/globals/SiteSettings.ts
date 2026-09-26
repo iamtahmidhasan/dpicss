@@ -24,7 +24,7 @@ export const SiteSettings: GlobalConfig = {
           name: 'authorName',
           type: 'text',
           required: true,
-          defaultValue: 'DPIRC Team',
+          defaultValue: 'DPICS Team',
           admin: {
             description: 'Author name displayed on all posts',
           },

@@ -40,8 +40,8 @@ type ContactSettings = {
 }
 
 export const metadata: Metadata = {
-  title: 'Contact | DPI Robotics Club',
-  description: 'Get in touch with DPI Robotics Club for any inquiries or questions.',
+  title: 'Contact | DPI Computing Society',
+  description: 'Get in touch with DPI Computing Society for any inquiries or questions.',
 }
 
 function getSocialIcon(platform: string): string {

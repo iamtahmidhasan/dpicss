@@ -6,7 +6,7 @@ type BaseStructuredInput = {
 }
 
 export function organizationJsonLd() {
-  const name = process.env.NEXT_PUBLIC_SITE_NAME || 'DPI Robotics Club'
+  const name = process.env.NEXT_PUBLIC_SITE_NAME || 'DPI Computing Society'
   const logo = toAbsoluteUrl(process.env.NEXT_PUBLIC_SITE_LOGO || '/logo.png')
 
   return {
@@ -19,7 +19,7 @@ export function organizationJsonLd() {
 }
 
 export function websiteJsonLd() {
-  const siteName = process.env.NEXT_PUBLIC_SITE_NAME || 'DPI Robotics Club'
+  const siteName = process.env.NEXT_PUBLIC_SITE_NAME || 'DPI Computing Society'
   const base = toAbsoluteUrl('/')
 
   return {
@@ -80,7 +80,7 @@ export function articleJsonLd(
       : undefined,
     publisher: {
       '@type': 'Organization',
-      name: process.env.NEXT_PUBLIC_SITE_NAME || 'DPI Robotics Club',
+      name: process.env.NEXT_PUBLIC_SITE_NAME || 'DPI Computing Society',
     },
   }
 }
@@ -102,7 +102,7 @@ export function courseJsonLd(
     image: input.image ? [toAbsoluteUrl(input.image)] : undefined,
     provider: {
       '@type': 'Organization',
-      name: input.providerName || process.env.NEXT_PUBLIC_SITE_NAME || 'DPI Robotics Club',
+      name: input.providerName || process.env.NEXT_PUBLIC_SITE_NAME || 'DPI Computing Society',
       sameAs: toAbsoluteUrl('/'),
     },
     instructor: input.instructorName
@@ -131,7 +131,7 @@ export function creativeWorkJsonLd(
     datePublished: input.datePublished,
     publisher: {
       '@type': 'Organization',
-      name: process.env.NEXT_PUBLIC_SITE_NAME || 'DPI Robotics Club',
+      name: process.env.NEXT_PUBLIC_SITE_NAME || 'DPI Computing Society',
     },
   }
 }
@@ -151,7 +151,7 @@ export function personJsonLd(
     url: toAbsoluteUrl(input.urlPath),
     memberOf: {
       '@type': 'Organization',
-      name: process.env.NEXT_PUBLIC_SITE_NAME || 'DPI Robotics Club',
+      name: process.env.NEXT_PUBLIC_SITE_NAME || 'DPI Computing Society',
       url: toAbsoluteUrl('/'),
     },
   }

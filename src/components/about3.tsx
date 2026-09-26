@@ -6,9 +6,9 @@ import { Button } from '@/components/ui/button'
 import { cn } from '@/lib/utils'
 import type { AboutSettingsData } from '@/globals/types'
 import type { AppLocale } from '@/lib/locale'
-import memberImg from '@/../public/member.jpeg'
 import Image from 'next/image'
 import Link from 'next/link'
+import { HERO_IMAGE_HEIGHT, HERO_IMAGE_SRC, HERO_IMAGE_WIDTH } from '@/lib/hero-image'
 
 interface About3Props {
   className?: string
@@ -36,7 +36,7 @@ export function About3({ className, aboutSettings, lang }: About3Props) {
   }, [])
 
   const mainImage = {
-    src: memberImg,
+    src: HERO_IMAGE_SRC,
     alt: 'Robotics Feature',
   }
 
@@ -80,6 +80,9 @@ export function About3({ className, aboutSettings, lang }: About3Props) {
           <Image
             src={mainImage.src}
             alt={mainImage.alt}
+            width={HERO_IMAGE_WIDTH}
+            height={HERO_IMAGE_HEIGHT}
+            sizes="(min-width: 1024px) 66vw, 100vw"
             className="size-full max-h-[620px] rounded-xl object-cover lg:col-span-2"
           />
 
@@ -87,12 +90,12 @@ export function About3({ className, aboutSettings, lang }: About3Props) {
             {/* Breakout Card */}
             <div className="flex flex-col justify-between gap-6 rounded-xl bg-muted p-7 md:w-1/2 lg:w-auto">
               <img
-                src="https://ui-avatars.com/api/?name=DPIRC&background=6366f1&color=fff&size=128"
-                alt="DPIRC Logo"
+                src="https://ui-avatars.com/api/?name=DPICS&background=6366f1&color=fff&size=128"
+                alt="DPICS Logo"
                 className="mr-auto h-12 w-12 rounded-lg object-contain"
               />
               <div>
-                <p className="mb-2 text-lg font-semibold">DPI Robotics Club</p>
+                <p className="mb-2 text-lg font-semibold">DPI Computing Society</p>
                 <p className="text-muted-foreground">
                   {aboutSettings.heroCard.description ||
                     'Empowering students with practical robotics knowledge.'}

@@ -13,9 +13,6 @@ const nextConfig: NextConfig = {
       {
         pathname: '/api/media/file/**',
       },
-      {
-        pathname: '/logo/**',
-      },
     ],
     remotePatterns: [
       {
@@ -35,6 +32,12 @@ const nextConfig: NextConfig = {
         hostname: 'ik.imagekit.io',
         port: '',
         pathname: '/dpircweb/**',
+      },
+      {
+        protocol: 'https',
+        hostname: 'images.unsplash.com',
+        port: '',
+        pathname: '/**',
       },
     ],
   },

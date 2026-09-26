@@ -119,7 +119,7 @@ export function MemberPoster({
               </div>
             ) : (
               <p className="text-sm text-muted-foreground text-center px-4">
-                Generate your official DPIRC member poster
+                Generate your official DPICS member poster
               </p>
             )}
           </div>

@@ -15,8 +15,8 @@ import type { HomeSettingsData } from '@/globals/types'
 import { localizedField } from '@/lib/localized-string'
 import type { HomePageStats } from './types'
 import LineSplitText from '@/components/LineSplitText'
-import img from '@/../public/member.jpeg'
 import Image from 'next/image'
+import { HERO_IMAGE_SRC } from '@/lib/hero-image'
 
 type HeroSectionProps = {
   user: boolean
@@ -25,12 +25,6 @@ type HeroSectionProps = {
   stats: HomePageStats
   className?: string
 }
-const avatarImages = [
-  'https://ik.imagekit.io/dpircweb/dpirc/media/fb95ca7b-85b4-45fb-b62e-e8cdb696d6f1-1783746979317_nZtxbFvQ2.webp',
-  'https://ik.imagekit.io/dpircweb/dpirc/media/6d305726-13ea-44c0-9486-dada1a46576a-1783683434565_RvP14fTcg.webp',
-  'https://ik.imagekit.io/dpircweb/dpirc/media/58412-1783674311062_DXzMB94Tq.webp',
-  'https://ik.imagekit.io/dpircweb/dpirc/media/46904-1783666235505_EMvUnICiY.webp',
-]
 
 export default function HeroSection({ user, lang, homeSettings, stats, className }: HeroSectionProps) {
   const rotatingWords = (homeSettings.titleRotating || [])
@@ -105,19 +99,19 @@ export default function HeroSection({ user, lang, homeSettings, stats, className
           >
             <div className="relative aspect-video lg:aspect-auto lg:h-[450px] overflow-hidden rounded-2xl bg-muted lg:col-span-2 group">
               <Image
-                src={img}
+                src={HERO_IMAGE_SRC}
                 alt="Robotics Lab"
-                className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105 active:scale-95"
+                fill
+                sizes="(min-width: 1024px) 66vw, 100vw"
+                className="object-cover transition-transform duration-700 group-hover:scale-105 active:scale-95"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent" />
               <div className="absolute bottom-6 left-6 flex gap-4">
                 <div className="flex -space-x-3">
                   {[1, 2, 3, 4].map((i) => (
-                    <Image
+                    <img
                       key={i}
-                      src={avatarImages[i - 1]}
-                      width={40}
-                      height={40}
+                      src={`https://i.pravatar.cc/100?img=${i + 10}`}
                       className="h-10 w-10 rounded-full border-2 border-background object-cover"
                       alt="member"
                     />

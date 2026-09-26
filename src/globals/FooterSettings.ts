@@ -17,7 +17,7 @@ export const FooterSettings: GlobalConfig = {
       label: 'Company Name',
       type: 'text',
       required: true,
-      defaultValue: 'DPIRC',
+      defaultValue: 'DPICS',
       localized: true,
     },
     {
@@ -136,7 +136,7 @@ export const FooterSettings: GlobalConfig = {
       name: 'copyrightText',
       label: 'Copyright Text',
       type: 'text',
-      defaultValue: '© DPIRC. All rights reserved.',
+      defaultValue: '© DPICS. All rights reserved.',
       localized: true,
       admin: {
         description: 'Displayed at the bottom of the footer.',

@@ -3,7 +3,7 @@ import { createPageMetadata } from '@/lib/seo'
 
 export const metadata = createPageMetadata({
   title: 'Reset Password',
-  description: 'Set a new secure password for your DPIRC account.',
+  description: 'Set a new secure password for your DPICS account.',
   path: '/reset-password',
   noIndex: true,
 })

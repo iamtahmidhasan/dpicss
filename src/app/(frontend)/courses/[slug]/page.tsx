@@ -264,7 +264,7 @@ export default async function CourseSinglePage({ params }: PageProps) {
     pickLocalizedString(course.title as unknown, locale) || 'this course'
   const courseShortDescForSeo =
     pickLocalizedString(course.shortDescription as unknown, locale) ||
-    'Robotics course from DPI Robotics Club.'
+    'Robotics course from DPI Computing Society.'
 
   const visitorModules = stripModulesForVisitor(modules)
   const preview = findFreePreview(modules)

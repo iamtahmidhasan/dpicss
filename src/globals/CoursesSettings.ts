@@ -13,7 +13,7 @@ export const CoursesSettings: GlobalConfig = {
   },
   fields: [
     { name: 'title', type: 'text', localized: true, defaultValue: 'Courses' },
-    { name: 'subtitle', type: 'textarea', localized: true, defaultValue: 'Learn with DPI Robotics Club | official and unofficial members welcome.' },
+    { name: 'subtitle', type: 'textarea', localized: true, defaultValue: 'Learn with DPI Computing Society | official and unofficial members welcome.' },
     { name: 'sortLatest', type: 'text', localized: true, defaultValue: 'Latest' },
     { name: 'sortPopular', type: 'text', localized: true, defaultValue: 'Most popular' },
     { name: 'empty', type: 'textarea', localized: true, defaultValue: 'No published courses yet. Please check back soon.' },

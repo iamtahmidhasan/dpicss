@@ -13,7 +13,7 @@ export const PostsSettings: GlobalConfig = {
   },
   fields: [
     { name: 'title', type: 'text', localized: true, defaultValue: 'Posts' },
-    { name: 'subtitle', type: 'textarea', localized: true, defaultValue: 'Latest updates, tutorials, and news from DPIRC.' },
+    { name: 'subtitle', type: 'textarea', localized: true, defaultValue: 'Latest updates, tutorials, and news from DPICS.' },
     { name: 'empty', type: 'textarea', localized: true, defaultValue: 'No posts published yet.' },
     { name: 'untitled', type: 'text', localized: true, defaultValue: 'Untitled Post' },
     { name: 'postImageAlt', type: 'text', localized: true, defaultValue: 'Post image' },

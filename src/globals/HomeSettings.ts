@@ -26,7 +26,7 @@ export const HomeSettings: GlobalConfig = {
         { name: 'point3', type: 'text', localized: true, defaultValue: 'Competition-ready training' },
       ],
     },
-    { name: 'badge', type: 'text', localized: true, defaultValue: 'DPI Robotics Club' },
+    { name: 'badge', type: 'text', localized: true, defaultValue: 'DPI Computing Society' },
     { name: 'title1', type: 'text', localized: true, defaultValue: 'Build robots ' },
     {
       name: 'titleRotating',
@@ -212,7 +212,7 @@ export const HomeSettings: GlobalConfig = {
       fields: [
         { name: 'badge', type: 'text', localized: true, defaultValue: 'Get started' },
         { name: 'title', type: 'text', localized: true, defaultValue: 'Ready to build your next robot?' },
-        { name: 'description', type: 'textarea', localized: true, defaultValue: 'Join DPI Robotics Club today and start shipping real projects with mentorship and momentum.' },
+        { name: 'description', type: 'textarea', localized: true, defaultValue: 'Join DPI Computing Society today and start shipping real projects with mentorship and momentum.' },
         {
           name: 'buttons',
           type: 'group',

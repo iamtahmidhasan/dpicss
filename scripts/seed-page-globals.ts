@@ -469,8 +469,8 @@ async function run() {
     data: {
       title: loc('Official Members', 'অফিসিয়াল সদস্য'),
       subtitle: loc(
-        'Meet our active DPIRC community members. Click on any member to view their profile.',
-        'আমাদের সক্রিয় DPIRC কমিউনিটি সদস্যদের সাথে পরিচিত হোন। যেকোনো সদস্যের প্রোফাইল দেখতে ক্লিক করুন।',
+        'Meet our active DPICS community members. Click on any member to view their profile.',
+        'আমাদের সক্রিয় DPICS কমিউনিটি সদস্যদের সাথে পরিচিত হোন। যেকোনো সদস্যের প্রোফাইল দেখতে ক্লিক করুন।',
       ),
     },
   })

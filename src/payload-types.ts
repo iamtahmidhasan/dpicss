@@ -203,7 +203,7 @@ export interface User {
    */
   memberCategory?: ('official' | 'unofficial') | null
   /**
-   * Linked profile for official DPIRC members
+   * Linked profile for official DPICS members
    */
   officialMemberProfile?: (string | null) | Member
   /**

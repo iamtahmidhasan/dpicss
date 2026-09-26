@@ -8,7 +8,7 @@ import { RegistrationSettingsProvider } from '@/components/RegistrationSettingsP
 
 export const metadata = createPageMetadata({
   title: 'Register',
-  description: 'Create a DPIRC account to enroll in courses and join the robotics community.',
+  description: 'Create a DPICS account to enroll in courses and join the robotics community.',
   path: '/register',
   noIndex: true,
 })

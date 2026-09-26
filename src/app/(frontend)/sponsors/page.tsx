@@ -7,7 +7,7 @@ import type { SponsorsSettingsData } from '@/globals/types'
 
 export const metadata: Metadata = {
   title: 'Our Partners & Sponsors',
-  description: 'Meet the organizations that support DPI Robotics Club in our mission to inspire innovation and learning.',
+  description: 'Meet the organizations that support DPI Computing Society in our mission to inspire innovation and learning.',
 }
 
 type SponsorCard = {

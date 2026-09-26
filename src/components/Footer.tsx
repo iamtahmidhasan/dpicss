@@ -1,5 +1,4 @@
 import Link from 'next/link'
-import Image from 'next/image'
 import { getPayloadWithRetry } from '@/lib/payload-safe'
 import config from '@/payload.config'
 import { getRequestLocale, payloadLocaleOptions } from '@/lib/i18n-server'
@@ -112,7 +111,7 @@ export default async function Footer() {
 
   const columns = settings.columns?.filter((column) => column?.title && column.links?.length) || []
   const legalLinks = settings.legalLinks?.filter((link) => link?.label && link?.href) || []
-  const companyName = pickLocalizedString(settings.companyName as unknown, locale) || 'DPIRC'
+  const companyName = pickLocalizedString(settings.companyName as unknown, locale) || 'DPICS'
   const description =
     pickLocalizedString(settings.description as unknown, locale) ||
     'Connecting learners and educators with a modern dashboard experience.'
@@ -188,21 +187,6 @@ export default async function Footer() {
                 })}
               </div>
             )}
-            <a
-              href="https://www.dianahost.com/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="items-center hidden md:inline-flex  gap-2 rounded-md bg-slate-800/50 px-3 py-1.5 transition-colors hover:bg-slate-800"
-            >
-              <span className="text-xs text-slate-400">Hosted on</span>
-              <Image
-                src="/logo/dianahost.png"
-                alt="DianaHost"
-                width={300}
-                height={100}
-                className="h-[50px] w-auto"
-              />
-            </a>
           </div>
 
           {columns.map((column, columnIndex) => (
@@ -234,7 +218,7 @@ export default async function Footer() {
         <div className="mt-12 border-t border-slate-800 pt-6 sm:flex sm:items-center sm:justify-between">
           <div className="flex flex-col items-start space-y-2 text-sm text-slate-500">
             <p className="text-sm text-slate-500">
-              © 2025 - {new Date().getFullYear()} DPI Robotics Club. All rights reserved.
+              © 2025 - {new Date().getFullYear()} DPI Computing Society. All rights reserved.
             </p>
             <p>
               {' '}
@@ -250,21 +234,6 @@ export default async function Footer() {
               </a>
               .
             </p>
-            <a
-              href="https://www.dianahost.com/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center md:hidden gap-2 rounded-md bg-slate-800/50 px-3 py-1.5 transition-colors hover:bg-slate-800"
-            >
-              <span className="text-xs text-slate-400">Hosted on</span>
-              <Image
-                src="/logo/dianahost.png"
-                alt="DianaHost"
-                width={300}
-                height={100}
-                className="h-[50px] w-auto"
-              />
-            </a>
           </div>
           {legalLinks.length > 0 ? (
             <div className="mt-4 flex flex-wrap gap-4 text-sm text-slate-300 sm:mt-0">

@@ -225,7 +225,7 @@ export default async function AccountPage() {
   const clubLogoUrl = typeof headerSettings?.logo === 'object' && headerSettings.logo
     ? String((headerSettings.logo as { url?: string }).url || '')
     : ''
-  const clubName = headerSettings?.siteTitle?.trim() || 'DPI Robotics Club'
+  const clubName = headerSettings?.siteTitle?.trim() || 'DPI Computing Society'
 
   try {
     const userDoc = await payload.findByID({

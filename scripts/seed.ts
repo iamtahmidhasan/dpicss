@@ -3,7 +3,7 @@ import config from '../src/payload.config.js'
 import 'dotenv/config'
 
 /**
- * Comprehensive seeding script for DPI Robotics Club LMS
+ * Comprehensive seeding script for DPI Computing Society LMS
  * Populates all collections with realistic dummy data
  */
 async function seedDatabase(): Promise<void> {
@@ -313,30 +313,30 @@ async function seedDatabase(): Promise<void> {
     const blogs = []
     const blogData = [
       {
-        title: 'Welcome to DPI Robotics Club',
+        title: 'Welcome to DPI Computing Society',
         slug: 'welcome-to-dpi-robotics-club',
         excerpt: 'An introduction to our robotics program and what students can expect to learn.',
         content:
-          "Welcome to the DPI Robotics Club! Our program is designed to give students hands-on experience with robotics, programming, and engineering principles. Whether you're a complete beginner or have some experience, we have courses and projects that will challenge and excite you.",
+          "Welcome to the DPI Computing Society! Our program is designed to give students hands-on experience with robotics, programming, and engineering principles. Whether you're a complete beginner or have some experience, we have courses and projects that will challenge and excite you.",
         author: instructorUser.id,
         category: categories[0].id,
         tags: ['welcome', 'introduction', 'robotics'],
         status: 'published',
         featured: true,
         seo: {
-          metaTitle: 'Welcome to DPI Robotics Club - Learn Robotics Today',
+          metaTitle: 'Welcome to DPI Computing Society - Learn Robotics Today',
           metaDescription:
-            'Join DPI Robotics Club for hands-on learning in robotics, programming, and engineering. Courses for all skill levels.',
+            'Join DPI Computing Society for hands-on learning in robotics, programming, and engineering. Courses for all skill levels.',
           metaKeywords: 'robotics club, DPI, programming, engineering, STEM',
           canonicalUrl: 'https://dpirc.edu/posts/welcome-to-dpi-robotics-club',
           noIndex: false,
           openGraph: {
-            ogTitle: 'Welcome to DPI Robotics Club',
+            ogTitle: 'Welcome to DPI Computing Society',
             ogDescription: 'Join our robotics program for hands-on STEM learning',
             ogImage: null,
           },
           twitterCard: {
-            twitterTitle: 'Welcome to DPI Robotics Club',
+            twitterTitle: 'Welcome to DPI Computing Society',
             twitterDescription: 'Join our robotics program for hands-on STEM learning',
             twitterImage: null,
           },
@@ -384,7 +384,7 @@ async function seedDatabase(): Promise<void> {
         status: 'published',
         featured: false,
         seo: {
-          metaTitle: '3D Printing Tips for Robotics Components - DPI Robotics Club',
+          metaTitle: '3D Printing Tips for Robotics Components - DPI Computing Society',
           metaDescription:
             'Learn essential 3D printing tips for creating custom robotics components. Improve your prints with these expert techniques.',
           metaKeywords: '3D printing, robotics, components, tips, manufacturing',
