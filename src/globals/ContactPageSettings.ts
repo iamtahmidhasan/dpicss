@@ -1,0 +1,88 @@
+import type { GlobalConfig } from 'payload'
+import { adminOnly, anyone } from '../access'
+
+export const ContactPageSettings: GlobalConfig = {
+  slug: 'contact-page-settings',
+  label: 'Contact Page Text',
+  admin: {
+    group: 'Pages',
+  },
+  access: {
+    read: anyone,
+    update: adminOnly,
+  },
+  fields: [
+    { name: 'title', type: 'text', localized: true, defaultValue: 'Contact Us' },
+    { name: 'subtitle', type: 'textarea', localized: true, defaultValue: "Get in touch with DPI Robotics Club | we'd love to hear from you." },
+    {
+      name: 'form',
+      type: 'group',
+      label: 'Contact Form',
+      fields: [
+        { name: 'name', type: 'text', localized: true, defaultValue: 'Your Name' },
+        { name: 'namePlaceholder', type: 'text', localized: true, defaultValue: 'Enter your full name' },
+        { name: 'email', type: 'text', localized: true, defaultValue: 'Email Address' },
+        { name: 'emailPlaceholder', type: 'text', localized: true, defaultValue: 'Enter your email' },
+        { name: 'phone', type: 'text', localized: true, defaultValue: 'Phone Number' },
+        { name: 'phonePlaceholder', type: 'text', localized: true, defaultValue: 'Enter your phone number (optional)' },
+        { name: 'subject', type: 'text', localized: true, defaultValue: 'Subject' },
+        { name: 'subjectPlaceholder', type: 'text', localized: true, defaultValue: 'What is this about?' },
+        { name: 'message', type: 'text', localized: true, defaultValue: 'Message' },
+        { name: 'messagePlaceholder', type: 'text', localized: true, defaultValue: 'Write your message here...' },
+        { name: 'submit', type: 'text', localized: true, defaultValue: 'Send Message' },
+        { name: 'submitting', type: 'text', localized: true, defaultValue: 'Sending...' },
+        { name: 'success', type: 'text', localized: true, defaultValue: 'Message Sent!' },
+        { name: 'successMessage', type: 'textarea', localized: true, defaultValue: "Thank you for reaching out. We'll get back to you soon." },
+        { name: 'error', type: 'text', localized: true, defaultValue: 'Failed to Send' },
+        { name: 'errorMessage', type: 'textarea', localized: true, defaultValue: 'Something went wrong. Please try again.' },
+        { name: 'nameRequired', type: 'text', localized: true, defaultValue: 'Name is required' },
+        { name: 'emailRequired', type: 'text', localized: true, defaultValue: 'Email is required' },
+        { name: 'emailInvalid', type: 'text', localized: true, defaultValue: 'Please enter a valid email' },
+        { name: 'subjectRequired', type: 'text', localized: true, defaultValue: 'Subject is required' },
+        { name: 'messageRequired', type: 'text', localized: true, defaultValue: 'Message is required' },
+      ],
+    },
+    {
+      name: 'info',
+      type: 'group',
+      label: 'Contact Information',
+      fields: [
+        { name: 'title', type: 'text', localized: true, defaultValue: 'Contact Information' },
+        { name: 'address', type: 'text', localized: true, defaultValue: 'Address' },
+        { name: 'email', type: 'text', localized: true, defaultValue: 'Email' },
+        { name: 'phone', type: 'text', localized: true, defaultValue: 'Phone' },
+        { name: 'hours', type: 'text', localized: true, defaultValue: 'Office Hours' },
+      ],
+    },
+    { name: 'whatsapp', type: 'text', localized: true, defaultValue: 'WhatsApp' },
+    { name: 'officeHoursValue', type: 'text', localized: true, defaultValue: 'Saturday - Thursday, 9:00 AM - 6:00 PM' },
+    { name: 'followUs', type: 'text', localized: true, defaultValue: 'Follow Us' },
+    {
+      name: 'map',
+      type: 'group',
+      label: 'Map Section',
+      fields: [
+        { name: 'title', type: 'text', localized: true, defaultValue: 'Find Us' },
+        { name: 'embedAlt', type: 'text', localized: true, defaultValue: 'Map showing DPIRC location' },
+        { name: 'openInMaps', type: 'text', localized: true, defaultValue: 'Open in Google Maps' },
+        { name: 'ourLocation', type: 'text', localized: true, defaultValue: 'Our Location' },
+      ],
+    },
+    {
+      name: 'faq',
+      type: 'group',
+      label: 'FAQ Section',
+      fields: [
+        { name: 'title', type: 'text', localized: true, defaultValue: 'Frequently Asked Questions' },
+        { name: 'q1', type: 'text', localized: true, defaultValue: 'How can I join the club?' },
+        { name: 'a1', type: 'textarea', localized: true, defaultValue: 'You can apply through our registration page or contact us directly. Official and unofficial students are welcome.' },
+        { name: 'q2', type: 'text', localized: true, defaultValue: 'What are your working hours?' },
+        { name: 'a2', type: 'textarea', localized: true, defaultValue: 'We typically hold workshops and events during afternoons and weekends. Check our events page for specific timings.' },
+        { name: 'q3', type: 'text', localized: true, defaultValue: 'Can I volunteer at your events?' },
+        { name: 'a3', type: 'textarea', localized: true, defaultValue: 'Yes! We always welcome volunteers. Reach out via this form or catch us at an event.' },
+        { name: 'q4', type: 'text', localized: true, defaultValue: 'How can I collaborate with DPIRC?' },
+        { name: 'a4', type: 'textarea', localized: true, defaultValue: "We're open to collaborations with other clubs, companies, and institutions. Contact us to discuss possibilities." },
+      ],
+    },
+  ],
+}
