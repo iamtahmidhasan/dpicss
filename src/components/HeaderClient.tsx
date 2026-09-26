@@ -134,7 +134,7 @@ export function HeaderClient({
             <span className="flex flex-col leading-tight">
               <span className="text-sm font-semibold">{siteTitle}</span>
               {siteTagline ? (
-                <span className="text-[7px] text-muted-foreground">{siteTagline}</span>
+                <span className="text-[7px] text-muted-foreground hidden">{siteTagline}</span>
               ) : null}
             </span>
           </Link>
