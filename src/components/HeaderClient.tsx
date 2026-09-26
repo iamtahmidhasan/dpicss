@@ -107,13 +107,13 @@ export function HeaderClient({
       {banner && banner.text && (
         <div
           className={cn(
-            'w-full py-2 text-center text-sm font-medium',
+            'w-full py-2 text-center text-sm font-medium hidden',
             banner.backgroundColor,
             banner.textColor,
           )}
         >
           {banner.link ? (
-            <Link href={banner.link} className="hover:underline">
+            <Link href={banner.link} className="hover:underline hidden">
               {banner.text}
             </Link>
           ) : (
