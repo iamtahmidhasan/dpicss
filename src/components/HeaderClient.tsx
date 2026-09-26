@@ -125,10 +125,10 @@ export function HeaderClient({
         <div className="mx-auto flex h-16 w-full max-w-7xl items-center gap-3 px-4">
           <Link href="/" className="flex items-center gap-2">
             {logoURL ? (
-              <img src={logoURL} alt={siteTitle} className="size-8 rounded-md object-cover" />
+              <img src='https://dpicss.vercel.app/dpicslogo.png' alt={siteTitle} className="size-8 rounded-md object-cover" />
             ) : (
               <div className="flex size-8 items-center justify-center rounded-md bg-primary text-primary-foreground text-xs font-semibold">
-                DP
+                CS
               </div>
             )}
             <span className="flex flex-col leading-tight">
